@@ -1,0 +1,151 @@
+.heading h2{
+    display: flex;
+    align-items: center;
+    
+}
+h2 span,
+h3 span{
+    color:#00204a;
+    font-size: 34px;
+    font-weight: bolder;
+}
+.container-fluid{
+    width:90%;
+    margin: auto;
+}
+.social-meia-icons{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-top: 6rem;
+}
+.fa-brands{
+    font-size: 32px;
+    width:auto !important;
+  margin:1rem auto;
+  transition: 0.3s linear;
+}
+.fa-brands:hover{
+    color:skyblue;
+    
+    /* rotate:20 deg; */
+   
+}
+.social-meia-icons a{
+    text-align: center;
+    color:#00204a;
+}
+.blog-image{
+    display:block;
+    height:50vh;
+    width:90% !important;
+    /* width:100% !important; */
+}
+.container-fluid .row{
+margin: auto;
+
+margin-top: 2rem;
+
+display:flex;
+justify-content: space-between;
+}
+/*parent */
+.course-details{
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.549);
+    width:89%;
+    border-radius: 10px;
+    margin: 0 auto;
+   
+   
+}
+.course-detail-heading{
+    background-color: #00204a;
+    border-radius: 10px 10px 0 0;
+    color:white;
+    font-size: 32px;
+    font-weight: bold;
+    padding:1rem;
+}
+.course-details-content{
+    display:flex;
+    border-bottom: 2px solid grey;
+    padding:10px 15px;
+    justify-content: space-between;
+    
+}
+.course-details-content p{
+    font-size: 20px !important;
+  
+}
+.fa-solid{
+    margin-right:8px;
+    font-size: 26px;
+}
+.fa-solid:hover{
+    color:red;
+}
+
+
+.course-details-content2{
+    display:flex;
+    border-bottom: 2px solid grey;
+    
+    padding:10px 5px;
+    justify-content: space-between;
+}
+/* ul li{
+    margin-top: 5px;
+    font-size: 17px;
+} */
+
+
+/* course-plan....................... */
+
+.course-plan-parent{
+    width:89%;
+    margin: 0 auto;
+    display:flex;
+    padding:10px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.549);
+}
+
+
+/* logo.................. */
+.logo-dscip{
+    height:3rem !important;
+    width:9rem !important;
+    padding-left: 3rem;
+  }
+
+@media screen and (min-width:280px) and (max-width:500px){
+    .container-fluid{
+        width:100%;
+    }
+    .blog-image{
+        width:100%;
+    }
+    .container-fluid .row,
+    .container-fluid{
+        width:100%; 
+        }
+
+        .blog-image{
+width:100% !important;
+        }
+        .course-details{
+width:100%;
+        }
+        .course-plan-parent{
+            width:100%;
+        }
+        .course-details-content p{
+            font-size: 17px !important;
+        }
+
+
+        /* heading............ */
+        .heading h2{
+            font-size: 1.7rem;
+        }
+}
