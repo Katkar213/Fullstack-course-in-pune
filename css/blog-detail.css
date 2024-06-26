@@ -3,6 +3,20 @@
     align-items: center;
     
 }
+p{
+    font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+ 
+  margin: 0px;
+}
+
+a{
+    color:black;
+}
+body{
+    padding-top: 4rem;
+}
 h2 span,
 h3 span{
     color:#00204a;
