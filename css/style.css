@@ -1391,9 +1391,9 @@ color:black !important;
 
 /* layout-padding............... */
 
-.layout_padding {
+/* .layout_padding {
   padding: 70px 0 !important;
-}
+} */
 
 /* limited seats........................... */
 .limited-seats{
@@ -1470,6 +1470,7 @@ width:85%;
 margin: auto;
 }
 .contact-info{
+  height: 100%;
 background-color:#2f55d4 ;  
 padding:24px 40px 40px 40px;
 
@@ -1529,6 +1530,23 @@ padding:24px 40px 40px 40px;
 .detail-box ul li{
 text-align: left !important;
 margin-top: 5px;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+
+margin: 0px;
+}
+.heading_container p{
+  text-align: left !important;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  
+  margin: 0px;
+}
+.about_section .heading_container{
+  margin-bottom: 20px;
 }
 
 .course-des{
@@ -1558,11 +1576,15 @@ margin-top: 5px;
   width:100%;
 }
 .course-div{
-  background-color:#f8f9fc !important;
+  /* background-color:#f8f9fc !important; */
   /* border:1px solid black; */
  
   box-shadow: 0px 0px 4px black;
   border-radius: 10px;
+  transition:0.5s linear;
+}
+.course-div:hover{
+  transform: translateY(-20px);
 }
 .course-image-decription a{
   color:black;
