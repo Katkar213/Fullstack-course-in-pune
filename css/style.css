@@ -5,6 +5,7 @@ body {
   background-color: #ffffff;
   overflow-x: hidden;
   scroll-behavior: smooth !important;
+  
  
 }
 html {
@@ -46,6 +47,7 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+          margin-bottom: 30px;
 }
 
 .heading_container h2 {
@@ -54,9 +56,9 @@ html {
   margin-bottom: 0;
 }
 
-.heading_container h2 span {
+/* .heading_container h2 span {
   color:#002759 ;
-}
+} */
 p{
   font-size: 17px;
 }
@@ -94,7 +96,7 @@ a:focus {
 /*header section*/
 .hero_area {
   position: relative;
-  min-height: 100vh;
+ 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -148,6 +150,11 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
+  position: fixed;
+  top: 0px;
+  z-index: 2000;
+  padding: 8px 0px;
+  width: 100%;
 }
 
 .header_section .container-fluid {
@@ -180,7 +187,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: red;
+  color: orange;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -351,8 +358,8 @@ a:focus {
 
 .slider_section .img-box img {
   width: 100%;
-  -webkit-animation: upDown 5s infinite;
-          animation: upDown 5s infinite;
+  /* -webkit-animation: upDown 5s infinite; */
+          /* animation: upDown 5s infinite; */
 }
 
 @-webkit-keyframes upDown {
@@ -550,6 +557,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  height:auto !important;
 }
 
 .why_section .box .img-box {
@@ -828,7 +836,8 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  justify-content: space-between;
+
   margin-bottom: 10px;
 }
 
@@ -856,10 +865,11 @@ a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap:20px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      /* -ms-flex-direction: column;
+          flex-direction: column; */
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -944,6 +954,12 @@ a:focus {
 
 
 /* my css */
+
+/* courses.................................. */
+
+.why-us-crousal-right{
+  height:100% !important;
+}
 
 /* blogs-page................................................................... */
 .blog-card{
@@ -1143,8 +1159,8 @@ height:52vh;
 
 /* logo.................. */
 .logo-dscip{
-  height:3rem !important;
-  width:9rem !important;
+  height:4rem !important;
+  width:20rem !important;
   padding-left: 3rem;
 }
 
@@ -1186,8 +1202,48 @@ height:52vh;
 
 .service_section .box .img-box{
   width:100%;
-  height:45vh;
+  height:30vh;
+ 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
+.service_section .box{
+  transition:0.5s linear;
+}
+
+
+.service_section .box:hover{
+  transform: translateY(-30px);
+}
+
+.img-box-1{
+  width:100%;
+  height:30vh;
+  background: url("../images/mern.png");
+}
+
+.img-box-2{
+  width:100%;
+  height:30vh;
+  background: url("../images/mean.png");
+}
+
+.box{
+  height:68vh;
+}
+
+.img-box-3{
+  width:100%;
+  height:30vh;
+  background: url("../images/Fullstackjava.jpg");
+}
+.service_section .box .img-box img{
+width:100%;
+
+}
+
 
 
 /* why us crousal.................. */
@@ -1305,10 +1361,326 @@ color:black !important;
 }
 
 
+.box{
+  height:auto !important;
+}
+
+.service_section .box{
+  height: 68vh !important;
+/* height:auto !important; */
+}
+
+
+
+
+
+/* footer-in-iframe-tag */
+.footer-iframe{
+  height:61.2vh;
+  margin-top: 20px !important;
+    width:100%;
+}
+
+
+
+.logo{
+  overflow: hidden;
+}
+
+
+
+/* layout-padding............... */
+
+.layout_padding {
+  padding: 70px 0 !important;
+}
+
+/* limited seats........................... */
+.limited-seats{
+  animation:color 1s linear infinite;
+  font-size: 22px !important;
+}
+@keyframes color{
+  0%{
+    color:white;
+  }
+  50%{
+   
+    color:orange;
+  }
+  100%{
+    color:white;
+  }
+}
+
+/* whats app image........... */
+
+.whats-app-enroll-btn{
+  display:flex;
+  border:none;
+  outline:none;
+  gap:1rem;
+}
+
+
+.fa-whatsapp{
+font-size: 26px !important;
+
+
+}
+
+.fa-check{
+  font-size: 26px !important;
+
+  
+  }
+
+
+.whtasapp-btn{
+  padding:10px;
+  background-color: #48c456;
+  border:none  !important;
+  outline:none !important;
+  font-size: 25px;
+  color:white;
+  border-radius: 10px;
+}
+.enroll-btn{
+  padding:11px;
+  background-color: rgba(0, 0, 255, 0.656);
+  border:none !important;
+  outline:none !important;
+  font-size: 25px;
+  color:white;
+  border-radius: 10px;
+}
+
+
+
+/* contact-us-parent.......... */
+.contact-us-parent{
+ background-color: #f8f9fc !important;
+padding:2rem;
+color:white;
+  margin: 20px 0;
+  
+}
+.contact-us-parent .row{
+width:85%;
+margin: auto;
+}
+.contact-info{
+background-color:#2f55d4 ;  
+padding:24px 40px 40px 40px;
+
+
+}
+
+.contact-info span{
+  font-size: 22px;
+   padding:7px;
+}
+.contact-us-left{
+  padding:0rem 4rem;
+}
+.contact-form{
+
+  background-color: white;
+  border-radius: 10px;
+  height:100%;
+  width:100%;
+}
+.contact-us-right{
+  /* border:2px solid black; */
+  padding:0rem 5rem;
+}
+.form-rows{
+  margin-bottom: 20px;
+}
+.form-rows h5{
+  color:black;
+  margin-bottom: 10px;
+}
+.form-rows span{
+  color:orange;
+}
+.form-rows input{
+  height:47px;
+  border-radius: 4px;
+  font-size: 19px;
+  padding:3px 14px 3px 4px;
+ border:1px solid grey;
+ outline:none;
+}
+.enroll-btn{
+  height:54px;
+  font-size: 22px;
+  
+}
+
+
+/* changes...................................................................................................
+.................................................................
+.................................................................. */
+
+
+/* why choose us........................................................ */
+
+.detail-box ul li{
+text-align: left !important;
+margin-top: 5px;
+}
+
+
+
+/* courses.............................................. */
+
+.course-image-div{
+  
+  height:33vh;
+  width:100%;
+
+  /* border:1px solid black; */
+}
+.course-image-div img{
+  display:block;
+
+  border-radius: 10px 10px 0px 0px;
+  height:100%;
+  width:100%;
+}
+.course-div{
+  background-color:#f8f9fc !important;
+  /* border:1px solid black; */
+ 
+  box-shadow: 0px 0px 4px black;
+  border-radius: 10px;
+}
+.course-image-decription a{
+  color:black;
+  cursor: pointer;
+}
+
+
+/* header................. */
+.header_section{
+padding:8px 0px;
+}
+.black{
+  color:black;
+}
+
+
+.scrolled{
+  background-color: white;
+  box-shadow: 0px 0px 4px black;
+  color:black !important;
+  transition:background 0.4s linear;
+  }
+
+  .list-scroll .nav-item a{
+    color:black !important;
+  }
+  .active{
+    color:orange !important;
+  }
+  .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    color: orange !important;
+  }
+
+p{
+  font-size: 16px;
+  font-weight: 400;
+}
 
 
 /* mobile view............... */
 @media screen and (min-width:280px) and (max-width:500px){
+
+
+  /* contact */
+  .contact-us-left{
+padding:0px 0px;
+  }
+  .contact-us-left h2{
+    font-size: 24px;
+  }  
+  .contact-us-left{
+    margin-bottom: 3rem;
+  } 
+  .enroll-btn{
+    font-size:14px !important;
+  }
+  .contact-us-left h4,
+  .contact-us-left span
+ {
+font-size: 20px;
+/* padding: 0px; */
+  }
+  /* .contact-us-left span{
+    display:none;
+  } */
+  .mail,
+  .mail div{
+    display:none !important;
+  }
+  .contact-us-left p{
+    font-size: 14px;
+  }
+ 
+
+
+.contact-us-right{
+  padding:0px 0px;
+}
+  .contact-info{
+padding:24px 10px 30px 10px;
+  }
+
+.container-fluid{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+
+
+
+/* hero area */
+.hero_area {
+  background: transparent !important;
+}
+.hero_area .hero_bg_box{
+display:block !important;
+}
+.hero_area .hero_bg_box .bg_img_box,
+.hero_area .hero_bg_box img{
+height:100% !important;
+}
+
+
+/* hero area ends */
+
+
+  .whats-app-enroll-btn{
+    flex-direction: column;
+      }
+.carousel-item h1{
+  font-size: 23px;
+}
+#detail-box{
+  height:21vh !important;
+}
+
+.logo-dscip {
+  height: 4rem !important;
+  width: 16rem !important;
+  padding-left:0 !important;
+}
+
+  .info_section .info_links {
+    flex-direction: column;
+    gap:0px;
+  }
   .blog-card,
   .choose-us-box{
     width:auto;
@@ -1348,6 +1720,9 @@ display:block !important;
 }
 
 /* placed-description......................... */
+.placed-description{
+  padding:13px;
+}
 .placed-description h4
 {
 font-size: 1.2rem;
@@ -1355,7 +1730,7 @@ padding:0px 13px;
 }
 .placed-description p{
   font-size: 1rem;
-  padding:0px 13px;
+  padding:0px 9px;
 }
 
 
@@ -1364,7 +1739,22 @@ padding:0px 13px;
 font-size: 1.6rem !important;
 }
 
+/* footer-section */
+.info_section .info_links {
+  width: 51%;
+  margin: auto;
+ flex-direction: row !important;
+  gap: 30%;
 
+}
+
+
+.center{
+  text-align: center !important;
+}
+.client_section .box .detail-box{
+height:auto;
+}
 
 }
 
@@ -1372,4 +1762,30 @@ font-size: 1.6rem !important;
   .choose-us-box{
     width:40vw !important;
   }
+  .map iframe{
+    width:100%;
+    margin-top: 20px;
+  }
+  .contact-form{
+    width:100%;
+  }
+  .full-stack-course-image{
+    width:100%;
+  }
+  .box{
+    height:auto;
+  }
+  .client_section .box .detail-box {
+    height: 39vh;
+}
+.slider-div{
+  width:auto;
+}
+.logo{
+  overflow: hidden;
+}
+.blog-image{
+ margin: auto;
+}
+
 }

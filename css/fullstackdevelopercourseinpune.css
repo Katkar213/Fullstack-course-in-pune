@@ -1,0 +1,49 @@
+.title-div{
+    background-color:#2f55d4!important;
+    color:#fff;
+  letter-spacing: normal;
+  padding-top: 40px;
+}
+.blog-hero-area{
+margin-bottom: 0;
+}
+
+.logo-dscip {
+    height: 4rem !important;
+    width: 17rem !important;
+    padding-left: 3rem;
+}
+
+.title-div .div{
+    margin: 4rem 1rem;
+}
+
+.title-div p{
+    width:80%;
+}
+.container .border{
+    margin-top: 30px;
+    border:1px solid black !important;
+    border-radius: 5px;
+   
+}
+
+.container .border:hover{
+    border-bottom: 2px solid blue !important;
+    
+  
+}
+.what-we-provide-div{
+    height:45vh;
+    border:1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.what-we-provide-div:hover{
+    background-color: #2f55d4!important;
+    color:white !important;
+}
+.what-we-provide-div:hover hr{
+    color:white !important;
+}

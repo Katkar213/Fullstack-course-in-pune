@@ -54,11 +54,15 @@ justify-content: space-between;
 
 /* logo.................. */
 .logo-dscip{
-    height:3rem !important;
-    width:9rem !important;
+    height:4rem !important;
+    width:16rem !important;
     padding-left: 3rem;
   }
 
+
+  .hero_area{
+min-height:4rem !important;
+  }
 
 @media screen and (min-width:280px) and (max-width:500px){
     .container-fluid .row,

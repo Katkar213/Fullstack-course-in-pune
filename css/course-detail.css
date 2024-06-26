@@ -3,6 +3,10 @@
     align-items: center;
     
 }
+body{
+    padding-top: 4rem;
+    background-color: #edf0f2;
+}
 h2 span,
 h3 span{
     color:#00204a;
@@ -38,9 +42,12 @@ h3 span{
 .blog-image{
     display:block;
     height:50vh;
-    width:90% !important;
+    width:100% !important;
     /* width:100% !important; */
 }
+
+
+
 .container-fluid .row{
 margin: auto;
 
@@ -53,14 +60,14 @@ justify-content: space-between;
 .course-details{
     box-shadow: 0px 0px 3px rgba(128, 128, 128, 0.549);
     width:89%;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     margin: 0 auto;
    
    
 }
 .course-detail-heading{
-    background-color: #00204a;
-    border-radius: 10px 10px 0 0;
+    background-color: #2f55d4  !important;
+    /* border-radius: 10px 10px 0 0; */
     color:white;
     font-size: 32px;
     font-weight: bold;
@@ -113,10 +120,36 @@ justify-content: space-between;
 
 /* logo.................. */
 .logo-dscip{
-    height:3rem !important;
-    width:9rem !important;
+    height:4rem !important;
+    width:16rem !important;
     padding-left: 3rem;
   }
+
+
+  /* course-detail */
+
+
+  .course-details-content div{
+font-size: 20px;
+  }
+
+/* sticky catd-duration */
+.sticky{
+    position:sticky;
+    top:7rem;
+    right:0;
+}
+
+
+.course-des{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #505050;
+    margin: 0px;
+}
+
+
 
 @media screen and (min-width:280px) and (max-width:500px){
     .container-fluid{

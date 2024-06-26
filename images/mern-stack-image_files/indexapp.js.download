@@ -1,0 +1,384 @@
+/* Template Name: Landrick - Saas & Software Landing Page Template
+   Author: Shreethemes
+   E-mail: support@shreethemes.in
+   Created: August 2019
+   Version: 3.2.0
+   Updated: April 2021
+   File Description: Main JS file of the template
+*/
+
+
+/*********************************/
+/*         INDEX                 */
+/*================================
+ *     01.  Loader               *
+ *     02.  Toggle Menus         *
+ *     03.  Active Menu          *
+ *     04.  Clickable Menu       *
+ *     05.  Back to top          *
+ *     06.  Feather icon         *
+ *     06.  DD Menu              *
+ *     06.  Active Sidebar Menu  *
+ ================================*/
+
+
+ window.addEventListener('load',   fn , false )
+
+ //  window.onload = function loader() {
+ function fn() {
+     // Preloader
+     
+  
+   
+     if(document.getElementById('preloader')){
+         setTimeout(() => {
+             document.getElementById('preloader').style.visibility = 'hidden';
+             document.getElementById('preloader').style.opacity = '0';
+         }, 350);
+     }
+     // Menus
+ }
+
+ 
+ //Menu
+ // Toggle menu
+ function toggleMenu() {
+     document.getElementById('isToggle').classList.toggle('open');
+     var isOpen = document.getElementById('navigation')
+     if (isOpen.style.display === "block") {
+         isOpen.style.display = "none";
+     } else {
+         isOpen.style.display = "block";
+     }
+ };
+ 
+ //Menu Active
+ function getClosest(elem, selector) {
+ 
+     // Element.matches() polyfill
+     if (!Element.prototype.matches) {
+         Element.prototype.matches =
+             Element.prototype.matchesSelector ||
+             Element.prototype.mozMatchesSelector ||
+             Element.prototype.msMatchesSelector ||
+             Element.prototype.oMatchesSelector ||
+             Element.prototype.webkitMatchesSelector ||
+             function (s) {
+                 var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+                     i = matches.length;
+                 while (--i >= 0 && matches.item(i) !== this) { }
+                 return i > -1;
+             };
+     }
+ 
+     // Get the closest matching element
+     for (; elem && elem !== document; elem = elem.parentNode) {
+         if (elem.matches(selector)) return elem;
+     }
+     return null;
+ 
+ };
+ 
+ function activateMenu() {
+ 
+     // this code is to remove nav-light class from navigation-menu only for allcourses page
+    
+     var navMenus = document.getElementsByClassName("navigation-menu");
+     var navMenus = [].slice.call(navMenus);
+     var pagePath = window.location.href;
+ 
+     console.log("Contact : ",pagePath);
+ 
+     if(pagePath.includes("contact")){   
+     navMenus.forEach((navMenu)=>{
+         console.log(navMenu.classList);
+             navMenu.classList.remove("nav-light");
+         })
+     }
+ // nav-light class remove code end
+ 
+ // Code for changing logo according to nav-light class
+ 
+     function getElement(name){
+         var elementList = document.getElementsByClassName(name);
+         return [].slice.call(elementList)
+     }
+ 
+     console.log(navMenus);
+ 
+     navMenus.forEach((navMenu)=>{
+        
+         if(!navMenu.classList.contains("nav-light")){
+             var lLight = getElement("l-light");
+             var lDark = getElement("l-dark");
+             lLight.forEach(ele=>{
+                 ele.classList.add("d-inline-block");
+             })
+             lDark.forEach(ele=>{
+                 ele.classList.add("d-none");
+             })
+         }
+ 
+         })
+ 
+ // changing logo according to nav-light class code end
+ 
+ 
+     var menuItems = document.getElementsByClassName("sub-menu-item");
+ 
+     if (menuItems) {
+ 
+         var matchingMenuItem = null;
+         for (var idx = 0; idx < menuItems.length; idx++) {
+             if (menuItems[idx].href === window.location.href) {
+                 matchingMenuItem = menuItems[idx];
+             }
+         }
+ 
+         if (matchingMenuItem) {
+             matchingMenuItem.classList.add('active');
+             var immediateParent = getClosest(matchingMenuItem, 'li');
+             if (immediateParent) {
+                 immediateParent.classList.add('active');
+             }
+ 
+             var parent = getClosest(matchingMenuItem, '.parent-menu-item');
+             if (parent) {
+                 parent.classList.add('active');
+                 var parentMenuitem = parent.querySelector('.menu-item');
+                 if (parentMenuitem) {
+                     parentMenuitem.classList.add('active');
+                 }
+                 var parentOfParent = getClosest(parent, '.parent-parent-menu-item');
+                 if (parentOfParent) {
+                     parentOfParent.classList.add('active');
+                 }
+             } else {
+                 var parentOfParent = getClosest(matchingMenuItem, '.parent-parent-menu-item');
+                 if (parentOfParent) {
+                     parentOfParent.classList.add('active');
+                 }
+             }
+         }
+     }
+     setTimeout(()=>{
+         // Clickable Menu
+         if(document.getElementById("navigation")){
+             var elements = document.getElementById("navigation").getElementsByTagName("a");
+             for(var i = 0, len = elements.length; i < len; i++) {
+                 elements[i].onclick = function (elem) {
+                     if(elem.target.getAttribute("href") === "javascript:void(0)") {
+                         var submenu = elem.target.nextElementSibling.nextElementSibling;
+                         submenu.classList.toggle('open');
+                     }
+                 }
+             }
+         }
+     },
+     300
+     )
+ 
+ }
+ 
+ 
+   function xyz(){
+    let ul=document.querySelector("ul");
+   if(ul.classList.contains("nav-light")){
+      ul.classList.remove("nav-light");
+      ul.classList.add("nav-dark");
+   }
+    const navbar = document.getElementById("topnav");
+     if(navbar!=null){
+     
+             navbar.classList.add("nav-sticky");
+           
+      
+     }
+    }
+    
+
+ 
+ 
+ // Menu sticky
+ function windowScroll() {
+     const navbar = document.getElementById("topnav");
+     if(navbar!=null){
+         if (
+             document.body.scrollTop >= 0 ||
+             document.documentElement.scrollTop >= 0
+         ) {
+             navbar.classList.add("nav-sticky");
+         } else {
+             navbar.classList.add("nav-sticky");
+         }
+     }
+ }
+ 
+ window.addEventListener('scroll', (ev) => {
+     ev.preventDefault();
+     windowScroll();
+ })
+ 
+ // back-to-top
+ var mybutton = document.getElementById("back-to-top");
+ window.onscroll = function () {
+     scrollFunction();
+ };
+ 
+ function scrollFunction() {
+     if(mybutton!=null){
+         if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+             mybutton.style.display = "block";
+         } else {
+             mybutton.style.display = "none";
+         }
+     }
+ }
+ 
+ function topFunction() {
+     document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 0;
+ }
+ 
+ 
+ // Course sideBar reveal and hide
+ const scrollPos = 500;
+ const UpperDetails = document.querySelector('.UpperCourseSideBar');
+ const LowerDetails = document.querySelector('.LowerCourseSideBar');
+ 
+ function checkPosition() {
+   let windowY = window.scrollY;
+   let WindowWidth = window.innerWidth;  
+ 
+     if(UpperDetails && LowerDetails)
+     if (WindowWidth>=1080 && windowY >= scrollPos) {
+         // Scrolling UP
+         UpperDetails.classList.add('d-none');
+         LowerDetails.classList.remove('d-none');
+     } else {
+         // Scrolling DOWN
+         UpperDetails.classList.remove('d-none');
+         LowerDetails.classList.add('d-none');
+     }
+ //   scrollPos = windowY;
+ }
+ 
+ window.addEventListener('scroll', checkPosition);
+ 
+ 
+ //ACtive Sidebar
+ (function () {
+     var current = location.pathname.substring(location.pathname.lastIndexOf('/') + 1);;
+     if (current === "") return;
+     var menuItems = document.querySelectorAll('.sidebar-nav a');
+     for (var i = 0, len = menuItems.length; i < len; i++) {
+         if (menuItems[i].getAttribute("href").indexOf(current) !== -1) {
+             menuItems[i].parentElement.className += " active";
+         }
+     }
+ })();
+ 
+ // feather icons
+ feather.replace()
+ 
+ // dd-menu
+ var ddmenu = document.getElementsByClassName("dd-menu");
+ for(var i = 0, len = ddmenu.length; i < len; i++) {
+     ddmenu[i].onclick = function (elem) {
+         elem.stopPropagation();
+     }
+ }
+ 
+ //Tooltip
+ var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+   return new bootstrap.Tooltip(tooltipTriggerEl)
+ });
+ 
+ //small menu
+ try {
+     var spy = new Gumshoe('#navmenu-nav a');
+ }catch(err) {
+     
+ }
+ 
+ function addCourseTitle(){
+     // add course name to apply now modal
+     var course = document.querySelector('.job-profile h5')?.innerText;
+     var courseInput = document.getElementById("course");
+     if(courseInput)courseInput.value = course;    
+     // console.log(courseInput);
+ 
+ }
+ 
+ 
+ document.addEventListener("DOMContentLoaded",
+ ()=>{
+     // This code is to load navbar to nav-placeholder division
+     // And then calling the activeMenu function with some delay so the navbar load fully
+     // and then the function shuld execute
+ 
+     let navPlaceholder = document.querySelector('#nav-placeholder')
+     async function displayNav() {      
+         try {
+             let response = await fetch('nav.txt'); // Gets a promise
+             navPlaceholder.innerHTML = await response.text();
+             await activateMenu();
+         } catch (err) {
+             console.log('Fetch error:' + err); // Error handling
+         }
+         }
+         displayNav();
+ 
+     function displayCurrentYear(){
+         let currentYear = document.querySelector('#CurrentYear');
+         currentYear.innerHTML = new Date().getFullYear();
+     }
+     // This code is to load navbar to footer-placeholder division
+     let footerPlaceholder = document.querySelector('#footer-placeholder')
+     async function displayFooter() {      
+         try {
+           let response = await fetch('footer.txt'); // Gets a promise
+           if(footerPlaceholder != null){
+               footerPlaceholder.innerHTML = await response.text();
+               await displayCurrentYear();
+             }
+         } catch (err) {
+           console.log('Fetch error:' + err); // Error handling
+         }
+       }
+       displayFooter();
+ 
+     // This code is to load modal to modal-placeholder division
+     let modalPlaceholder = document.querySelector('#modal-placeholder')
+ 
+     async function dispayModal(){
+         try{
+         if(modalPlaceholder){
+             let response = await fetch("CourseModal.html")
+             modalPlaceholder.innerHTML = await response.text();
+             await addCourseTitle();
+         }}catch (err) {
+             console.log('Fetch error:' + err); // Error handling
+           }
+     }
+     dispayModal();
+ 
+     // code add course banner background logo
+     var location = window.location.pathname;
+     location = location.substring(0,location.length-5);
+     if(!["/placement","/gallery",].includes(location)){
+         var heroSection = document.querySelector("section.bg-half-260");
+         var url="";
+         if(location.includes("react")){
+             var url = "url('./../images/bannerLogo/react";
+         }else{
+             var url = "url('./../images/bannerLogo".concat(location);
+         }
+         url = url.concat(".png')");
+         if(heroSection)
+         heroSection.style.backgroundImage = url;
+     }
+     }
+ )
+ 
