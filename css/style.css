@@ -1590,7 +1590,10 @@ margin: 0px;
   color:black;
   cursor: pointer;
 }
-
+/* .navbar-toggle{
+  color:black;
+  z-index: 2200;
+} */
 
 /* header................. */
 .header_section{
@@ -1636,6 +1639,8 @@ p{
 @media screen and (min-width:280px) and (max-width:500px){
 
 
+  
+
   /* contact */
   .contact-us-left{
 padding:0px 0px;
@@ -1646,9 +1651,9 @@ padding:0px 0px;
   .contact-us-left{
     margin-bottom: 3rem;
   } 
-  .enroll-btn{
+  /* .enroll-btn{
     font-size:14px !important;
-  }
+  } */
   .contact-us-left h4,
   .contact-us-left span
  {
@@ -1704,14 +1709,15 @@ height:100% !important;
       }
 .carousel-item h1{
   font-size: 23px;
+  padding:0px 6px;
 }
 #detail-box{
-  height:21vh !important;
+  height:18vh !important;
 }
 
 .logo-dscip {
-  height: 4rem !important;
-  width: 16rem !important;
+  height: 3rem !important;
+  width: 12rem !important;
   padding-left:0 !important;
 }
 
@@ -1793,6 +1799,16 @@ font-size: 1.6rem !important;
 .client_section .box .detail-box{
 height:auto;
 }
+.navbar-nav{
+  background-color: white;
+  padding-bottom: 10px; 
+}
+.navbar-nav a{
+  color:black !important;
+}
+.header_section{
+  padding:8px 15px;
+  }
 
 }
 

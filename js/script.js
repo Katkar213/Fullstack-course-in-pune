@@ -16,14 +16,17 @@ let arr = [
 document.addEventListener("scroll",()=>{
   const header=document.getElementsByClassName("header_section");
   const list=document.getElementsByClassName("navbar-nav");
+  const hamberger=document.getElementsByClassName("navbar-toggler");
   
   if(window.scrollY>0){
     header[0].classList.add("scrolled");
-    list[0].classList.add("list-scroll")
+    list[0].classList.add("list-scroll");
+    hamberger[0].classList.add("navbar-color");
   }
   else{
     header[0].classList.remove("scrolled");
     list[0].classList.remove("list-scroll");
+    hamberger[0].classList.add("navbar-color");
   }
   })
 
