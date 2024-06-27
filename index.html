@@ -33,10 +33,55 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+
+  <style>
+    .dropdown-item:hover{
+  color:blue;}
+  .dropbtn {
+  
+    color: white;
+    background-color: transparent !important;
+    
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;} 
+   </style>
+
+
+
 </head>
 
 <body>
 
+  <div class="contact-div">
+   <div class="call-image"><i class="fa-solid fa-headset"></i></div> <div><p >Need help?
+    <br/> Call Us:<a href="tel:9356097343"></a> 9356097343</p></div> 
+  </div>
   <div class="hero_area">
 
     <div class="hero_bg_box">
@@ -45,13 +90,22 @@
       </div>
     </div>
 
+  
     <!-- header section strats -->
-    <header class="header_section">
+    
+    <header class="header_section mt-5">
+     
       <div class="container-fluid">
+
+        
+
         <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <img class="logo-dscip" src="./images/DSCIP LOGO.png" alt="logo" />
-          </a>
+          <div>
+            <a class="navbar-brand" href="index.html">
+              <img class="logo-dscip" src="./images/DSCIP LOGO.png" alt="logo" />
+            </a> 
+          </div>
+       
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,20 +118,28 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about"> About</a>
+                <a class="nav-link" href="./about.html"> About</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#courses">Courses</a>
+         
+              <li  class="nav-item">
+                <div class="dropdown">
+                  <a class="dropbtn nav-link">Course</a>
+                  <div class="dropdown-content">
+                    <a class="dropdown-item" href="./mean-stack-course-in-pune.html">Mean Stack</a>
+                    <a class="dropdown-item" href="./mern-stack-course-in-pune.html">Mern Stack</a>
+                    <a class="dropdown-item" href="./full-stack-java-course-in-pune.html">Fullstack with Java</a>
+                    <a class="dropdown-item" href="./full-stack-java-course-in-pune.html">Fullstack with Python</a>
+                   
+                   
+                  </div>
+                </div>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link" href="./blog.html"> Blog</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="./contactus.html">Contact</a>
               </li>
 
             </ul>
@@ -92,7 +154,7 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="container ">
-              <div class="row" style="margin-top: 5rem;">
+              <div class="row" style="margin-top:7rem;">
                 <h1 style="color:#8dbdfbde;font-weight: bold;text-transform: none !important;" class="mb-4">Full Stack
                   Developer Course in Pune</h1>
                 <div class="col-md-12 col-lg-7 ">
@@ -101,14 +163,12 @@
                     <h1 id="detail-box" style="height:25vh;text-transform: none !important;">
                       Full Stack Development Course With Live Training
                     </h1>
-                    <p style="font-size: 19px;" class="limited-seats">
-                      Limited Seats
-                    </p>
+                   
 
                   </div>
                   <div class="whats-app-enroll-btn">
 
-                    <a aria-label="Chat on WhatsApp" href="https://wa.me/9767847265" target="blank">
+                    <a aria-label="Chat on WhatsApp" href="https://wa.me/9356097343" target="blank">
                       <button class="whtasapp-btn"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>
                         &nbsp;Whats App</button>
                     </a>
@@ -145,9 +205,7 @@
       <h2>
         Placed <span>Students</span>
       </h2>
-      <p>
-        our recent placements
-      </p>
+     
     </div>
 
 
@@ -333,9 +391,7 @@
     <h2>
       Our Students Currently <span>Placed at</span>
     </h2>
-    <p>
-      our placement Partners
-    </p>
+   
   </div>
   <!-- companies.......................... -->
 
@@ -457,10 +513,7 @@
         <h2>
           About <span>Us</span>
         </h2>
-        <p>
-          Welcome to Fullstack developer Course in Pune, where you can study full stack development with a curriculum
-          that is practical and career-focused.
-        </p>
+        
       </div>
       <div class="row">
         <div class="col-md-6 col-lg-6 p-2">
@@ -498,12 +551,8 @@
     <div class="container overflow-hidden ">
       <div class="heading_container heading_center">
         <h2>
-          Tachnologies You Learn
+          Technologies You Learn
         </h2>
-
-        <p>
-          Our wide range of facility and guidance for our students
-        </p>
       </div>
       <div class="row gy-5">
         <div class="col-lg-4 p-3">
@@ -579,9 +628,7 @@
           Why Choose <span>Us</span>
         </h2>
 
-        <p>
-          Our wide range of facility and guidance for our students
-        </p>
+        
       </div>
 
 
@@ -786,30 +833,6 @@
 
 
 
-  <!-- end why section -->
-<section class="layout_padding">
-<div class="container-fluid"></div>
-</section>
-
-  <!-- certificate............................... -->
-
-  <div class="container px-4 mt-5">
-    <div class="heading_container heading_center psudo_white_primary mb_45   ">
-      <h2>
-
-        Certification
-
-      </h2>
-    </div>
-    <div class="row gx-5 mt-4">
-      <div class="col certificate-div">
-        <div class="p-3  full-stack-course-image"><img src="./full-stack-certificate.jpg" /></div>
-      </div>
-
-    </div>
-  </div>
-
-
   <!-- client section -->
 
   <section class="client_section layout_padding">
@@ -953,90 +976,6 @@
   </div>
 
 
-  <!-- 3-address-cards -->
-  <!-- <div class="container overflow-hidden mt-4 mb-4">
-      <div class="row gy-5">
-        <div class="col-lg-4">
-          <div class="p-3 three-contact-cards"><b>Call Us: </b>1234567891</div>
-        </div>
-        <div class="col-lg-4">
-          <div class="p-3 three-contact-cards"><b>Address: </b>office no 202, above Jijamata bank, Karve Nagar, Pune, Maharashtra 411052</div>
-        </div>
-        <div class="col-lg-4">
-          <div class="p-3 three-contact-cards"><b>Email: </b>fullstackdevelopment@gmail.com</div>
-        </div>
-        
-      </div>
-    </div> -->
-
-
-  <!-- <div class="container-fluid mt-4 ">
-    
-    <div class="row">
-
-      <div class="col-lg-6">
-        <form class="contact-form">
-
-
-
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Firstname</label>
-              <input type="text" class="form-control" required id="inputEmail4" placeholder="FirstName">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Lastname</label>
-              <input type="text" class="form-control" id="inputPassword4" required  placeholder="Lastname">
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="tel" maxlength="10" class="form-control" id="inputEmail4" required  placeholder="Email">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Phone Number</label>
-              <input type="password" class="form-control" id="inputPassword4" required  placeholder="Phone Number">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" required  placeholder="1234 Main St">
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity" required placeholder="city">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <input type="text" class="form-control" id="inputState" required placeholder="state">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Zip</label>
-              <input type="text" class="form-control" id="inputZip" required placeholder="Zip">
-            </div>
-            <div class="form-group col-lg-12 col-md-6">
-              <textarea style="width:100%;" type="text" placeholder="Enter your message" rows="4" cols="12"></textarea>
-            </div>
-
-          </div>
-       
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-
-      <div class="col-lg-6 map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15135.613558456307!2d73.8138925!3d18.4880348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0176b6a3a3%3A0xf12e2883539115ef!2sDATA%20COUNCIL%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1716462386106!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-    </div>
-
-  </div> -->
-
-
-
   <!-- contact-form -->
   
     <div class="container-fluid contact-us-parent">
@@ -1049,34 +988,37 @@
               Karvenagar,Pune, Maharastra - 411052</p>
             <h4 class="mt-4">Contact Number</h4>
             <p class="course-des">
-              <span><i class="fa-solid fa-phone"></i></span>9767847265
+              <span><i class="fa-solid fa-phone"></i></span>9356097343
             </p>
             <h4 class="mt-4 mail">Mail</h4>
             <p class="mail course-des"><span><i class="fa-solid fa-envelope"></i></span> fullstackdevelopercourseinpune@gmail.com
             </p>
           </div>
         </div>
+        
         <div class="col-lg-6 contact-us-right">
+          <form>
           <div class="contact-form">
             <div class="form-rows">
               <h5>Name <span>*</span></h5>
-              <input type="text" style="width:100%" placeholder="Enter Your Name" />
+              <input type="text" required style="width:100%" placeholder="Enter Your Name" />
             </div>
 
             <div class="form-rows">
               <h5>Email <span>*</span></h5>
-              <input type="text" style="width:100%" placeholder="Email" />
+              <input type="email"  required style="width:100%" placeholder="Email" />
             </div>
 
             <div class="form-rows">
               <h5>Phone No <span>*</span></h5>
-              <input type="text" style="width:100%" placeholder="Phone No" />
+              <input type="tel" maxlength="10"  required style="width:100%" placeholder="Phone No" />
             </div>
             <div class="text-center">
-              <button class="btn btn-primary enroll-btn" style="width:50%">Enroll Now</button>
+              <button type="submit" class="btn btn-primary enroll-btn" style="width:50%">Enroll Now</button>
             </div>
-
           </div>
+          </form>
+         </div>
         </div>
       </div>
     </div>
@@ -1090,57 +1032,76 @@
   <section class="info_section layout_padding2 mt-3">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-lg-4 info_col">
+
+        <div class="col-md-6 col-lg-5 info_col p-3">
           <div class="info_contact">
             <h4>
               Address
             </h4>
             <div class="contact_link_box">
-              <a href="https://www.google.com/maps/place/DataCouncil+%7C+data+science+course+in+pune/@18.488109,73.81378,15z/data=!4m6!3m5!1s0x3bc2bf8f5cb04d43:0x6086eea76ee84fb6!8m2!3d18.488109!4d73.81378!16s%2Fg%2F11g98wlxts?entry=ttu"
+              <a href="https://www.google.com/maps/place/DataCouncil+%7C+data+science+course+in+pune/@18.488109,73.81378,15z/data=!4m6!3m5!1s0x3bc2bf8f5cb04d43:0x6086eea76ee84fb6!8m2!3d18.488109!4d73.81378!16s%2Fg%2F11g98wlxts?entry=ttu" style="color:white !important"
                 target="blank">
                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
+                <span class="course-des">
                   office no 202, above Jijamata bank, Karve Nagar, Pune, Maharashtra 411052
                 </span>
               </a>
-              <a href="call">
+              <a href="tel:8882192787" style="color:white !important">
                 <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call 9767847265
+                <span class="course-des">
+                  9356097343
                 </span>
               </a>
-              <a href="email">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
+             
+              <a href="mailto:ketankatkar213@gmail.com?subject=subject text" style="color:white !important">
+                <i class="fa fa-envelope"  aria-hidden="true"></i>
+                <span class="course-des">
                   fullstackdevelopercourseinpune@gmail.com
                 </span>
+              </a>
+            </div>
+
+            <div class="info_social" style="padding:30px 40px 0px 0px">
+              <a href="facebook">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="linkedin">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="instagram">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
               </a>
             </div>
           </div>
 
         </div>
-        <div class="col-md-6 col-lg-3 info_col">
+
+        <div class="col-md-6 col-lg-4 info_col p-2">
           <div class="info_detail">
             <h4 class="center">
               Info
             </h4>
-            <p>
+            <p class="course-des">
               Discover your potential by enrolling in a full stack course in Pune, where you may gain access to all the
               resources you need to become an expert programmer in full stack.
             </p>
           </div>
         </div>
-        <div class="col-md-6 col-lg-2 mx-auto info_col">
-          <div class="info_link_box">
+
+        <div class="col-md-6 col-lg-3 mx-auto info_col p-3">
+          <div class="info_link_box course-des">
             <h4 class="center">
               Links
             </h4>
             <div class="info_links">
               <div>
-                <a class="active" href="index.html">
+                <a class="active" href="./index.html">
                   Home
                 </a>
-                <a href="#about">
+                <a href="./about.html">
                   About
                 </a>
                 <a href="./blog.html">
@@ -1148,10 +1109,10 @@
                 </a>
               </div>
               <div>
-                <a href="#contact">
+                <a href="./contactus.html">
                   contact
                 </a>
-                <a href="#courses">
+                <a href="./mern-stack-course-in-pune.html">
                   Courses
                 </a>
 
@@ -1160,32 +1121,14 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 col-lg-3 info_col ">
-          <h4>
-            Get in touch with us
-          </h4>
-          <div class="info_social">
-            <a href="facebook">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="twitter">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="linkedin">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-            <a href="instagram">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
+        
       </div>
     </div>
     <section class="footer_section">
       <div class="container">
-        <p>
+        <p style="font-size: 19px;">
           &copy; <span id="displayYear"></span> All Rights Reserved By
-          <a href="www.fullstackdevelopercourseinpune.in">Fullstack developer Course in Pune</a>
+          <a href="www.fullstackdevelopercourseinpune.com">Fullstack developer Course in Pune</a>
         </p>
       </div>
     </section>

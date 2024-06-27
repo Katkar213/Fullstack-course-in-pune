@@ -10,6 +10,9 @@ p{
  
   margin: 0px;
 }
+.fa-whatsapp{
+font-size: 34px !important;
+}
 
 a{
     color:black;
@@ -67,11 +70,14 @@ justify-content: space-between;
 
 
 /* logo.................. */
-.logo-dscip{
-    height:4rem !important;
-    width:16rem !important;
+
+  .logo-dscip {
+    height: 4rem ;
+    width: 20rem;
     padding-left: 3rem;
-  }
+}
+
+
 
 
   .hero_area{
@@ -95,6 +101,23 @@ font-size: 38px;
             flex-direction: row;
             margin:auto ;
         }
+     /* changes............ */
+
+     /* changes */
+     .logo-dscip{
+        width:12rem !important;
+        height:3rem !important;
+    }
+    .header_section{
+     height:5.8rem;
+    }
+    .navbar-nav{
+        margin-top: 1.7rem;
+    width:100%;
+       box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.726);
+    }
+        
+        
        
 }
 

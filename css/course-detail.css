@@ -13,10 +13,7 @@ h3 span{
     font-size: 34px;
     font-weight: bolder;
 }
-.container-fluid{
-    width:90%;
-    margin: auto;
-}
+
 .social-meia-icons{
     display:flex;
     flex-direction: column;
@@ -142,16 +139,51 @@ font-size: 20px;
 
 
 .course-des{
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 28px;
-    color: #505050;
+   
     margin: 0px;
 }
 
 
+.nav-link{
+    color:black;
+}
+
+.header_section{
+    background-color: white !important;
+}
+
+
+.scrolled{
+    background-color: white !important;
+    box-shadow: 0px 0px 4px black;
+    color:black !important;
+    transition:background 0.4s linear;
+    }
+  
+    .scrolled .powered-by{
+      display:inline-block;
+  color:black;
+    }
+  .nav-item a{
+    color:black !important;
+  }
+    .list-scroll .nav-item a{
+      color:black !important;
+    }
+    .active{
+      color:orange !important;
+    }
+    .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+      color: orange !important;
+    }
+
+
 
 @media screen and (min-width:280px) and (max-width:500px){
+ 
     .container-fluid{
         width:100%;
     }
@@ -180,5 +212,21 @@ width:100%;
         /* heading............ */
         .heading h2{
             font-size: 1.7rem;
+        }
+
+
+
+        /* changes */
+        .logo-dscip{
+            width:12rem !important;
+            height:3rem !important;
+        }
+        .header_section{
+         height:5.8rem;
+        }
+        .navbar-nav{
+            margin-top: 1.7rem;
+        width:100%;
+           box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.437);
         }
 }

@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+}
+
+.about-hero_area{
+margin-bottom: 0px !important;
+background-color: #2f55d4;
+padding: 4rem 0;
+}
+
+P{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+ 
+  margin: 0px;
+}
+
+.about-us-parent{
+/* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397); */
+padding:1.4rem;
+border-radius: 8px;
+}
+.our-mission-parent{
+   
+    color:black;
+    margin-top: 1.5rem;
+}
+.our-mission-left{
+    display:flex;
+   justify-content: center;
+   color:white;
+   padding:40px 0;
+   font-weight: 500;
+    
+}
+.header-banner{
+    background-color: #2f55d4;
+    color:white;
+  
+    border:5px solid white;
+}
+
+
+.nav-link{
+    color:black;
+}
+
+
+
+.scrolled{
+    background-color: white;
+    box-shadow: 0px 0px 4px black;
+    color:black !important;
+    transition:background 0.4s linear;
+    }
+  
+    .scrolled .powered-by{
+      display:inline-block;
+  color:black;
+    }
+  .nav-item a{
+    color:black !important;
+  }
+    .list-scroll .nav-item a{
+      color:black !important;
+    }
+    .active{
+      color:orange !important;
+    }
+    .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+      color: orange !important;
+    }
+    .about-us-content{
+    background-color:#f8f9fc;  
+    }
+
+
+
+@media screen and (min-width:280px) and (max-width:500px){
+    
+        .course-des {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 28px;
+            margin: 0px;
+        }
+        .heading_container p{
+            width:90%;
+            margin-top: 2px;
+            margin: auto;
+        }
+
+           /* changes */
+     .logo-dscip{
+        width:12rem !important;
+        height:3rem !important;
+    }
+    .header_section{
+     height:5.8rem;
+    }
+    .navbar-nav{
+        margin-top: 1.7rem;
+    width:100%;
+       box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.726);
+    }
+    .hide{
+        display:none;
+    }
+    
+}

@@ -32,6 +32,123 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+
+<style>
+
+  .nav-link{
+    color:black !important;
+}
+.active{
+      color:orange !important;
+    }
+
+    
+.about-hero_area{
+margin-bottom: 0px !important;
+background-color: #2f55d4;
+padding: 4rem 0;
+}
+
+P{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+ 
+  margin: 0px;
+}
+
+.about-us-parent{
+/* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.397); */
+padding:1.4rem;
+border-radius: 8px;
+}
+.our-mission-parent{
+   
+    color:black;
+    margin-top: 1.7rem;
+}
+.our-mission-left{
+    display:flex;
+   justify-content: center;
+   color:white;
+   padding:40px 0;
+   font-weight: 500;
+    
+}
+.header-banner{
+    background-color: #2f55d4;
+    color:white;
+    margin-top: 4rem !important;
+  
+    border:5px solid white;
+}
+
+
+.nav-link{
+    color:black;
+}
+
+
+
+
+  
+    .scrolled .powered-by{
+      display:inline-block;
+  color:black;
+    }
+  .nav-item a{
+    color:black !important;
+  }
+    .list-scroll .nav-item a{
+      color:black !important;
+    }
+ 
+    .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+      color: orange !important;
+    }
+    .about-us-content{
+    background-color:#f8f9fc;  
+    }
+
+    .dropdown-item:hover{
+  color:blue !important;}
+  .dropbtn {
+  
+    color: white;
+    background-color: transparent !important;
+    
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;} 
+  .active{
+      color:orange !important;
+    }
+</style>
+
 </head>
 
 <body>
@@ -41,7 +158,7 @@
     
 
     <!-- header section strats -->
-    <header class="header_section blog-header">
+    <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
          <a class="navbar-brand" href="index.html">
@@ -57,8 +174,29 @@
               <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home </a>
               </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html"> About</a>
+              </li>
+         
+              <li  class="nav-item">
+                <div class="dropdown">
+                  <a class="dropbtn nav-link">Course</a>
+                  <div class="dropdown-content">
+                    <a class="dropdown-item" href="./mean-stack-course-in-pune.html">Mean Stack</a>
+                    <a class="dropdown-item" href="./mern-stack-course-in-pune.html">Mern Stack</a>
+                    <a class="dropdown-item" href="./full-stack-java-course-in-pune.html">Fullstack with Java</a>
+                    <a class="dropdown-item" href="./full-stack-java-course-in-pune.html">Fullstack with Python</a>
+                   
+                   
+                  </div>
+                </div>
+              </li>
+
               <li class="nav-item active">
-                <a class="nav-link" href="./blog.html"> Blog <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./blog.html"> Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -67,14 +205,23 @@
     </header>
     <!-- end header section -->
     </div>
-    <div class="heading_container heading_center pt-4">
-      <h2>
-     Blogs
-      </h2>
-      <p>
-        Blogs in Fullstack development
-      </p>
-    </div>
+
+
+    <section class="hide">
+      <div class="container-fluid our-mission-parent px-4  about-hero_area" >
+        <div class="row gx-5">
+          <div class="col-lg-12 our-mission-left">
+           <div class="p-3">
+            <h1 style="text-align: left;"> Blogs</h1>
+           
+           </div>
+          </div>
+    
+     
+    
+        </div>
+      </div>
+    </section>
 <section class="m-4">
   <div class="container-fluid ">
     <div class="row">
@@ -130,97 +277,109 @@
 </section>
 
   <!-- footer....................................................... -->
-<section class="info_section layout_padding2 mt-3">
+
+
+
+
+
+
+
+ <!-- footer....................................................... -->
+ <section class="info_section layout_padding2 mt-3">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-lg-4 info_col">
+
+      <div class="col-md-6 col-lg-5 info_col p-3">
         <div class="info_contact">
           <h4>
             Address
           </h4>
           <div class="contact_link_box">
-            <a href="#" alt="address">
+            <a href="https://www.google.com/maps/place/DataCouncil+%7C+data+science+course+in+pune/@18.488109,73.81378,15z/data=!4m6!3m5!1s0x3bc2bf8f5cb04d43:0x6086eea76ee84fb6!8m2!3d18.488109!4d73.81378!16s%2Fg%2F11g98wlxts?entry=ttu" style="color:white !important"
+              target="blank">
               <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
+              <span class="course-des">
                 office no 202, above Jijamata bank, Karve Nagar, Pune, Maharashtra 411052
               </span>
             </a>
-            <a href="#" alt="phone">
+            <a href="tel:8882192787" style="color:white !important">
               <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call 9767847265
+              <span class="course-des">
+                 9356097343
               </span>
             </a>
-            <a href="#" alt="email">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
+           
+            <a href="mailto:ketankatkar213@gmail.com?subject=subject text" style="color:white !important">
+              <i class="fa fa-envelope"  aria-hidden="true"></i>
+              <span class="course-des">
                 fullstackdevelopercourseinpune@gmail.com
               </span>
             </a>
           </div>
+
+          <div class="info_social" style="padding:30px 40px 0px 0px">
+            <a href="facebook">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="linkedin">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-       
+
       </div>
-      <div class="col-md-6 col-lg-3 info_col">
+
+      <div class="col-md-6 col-lg-4 info_col p-2">
         <div class="info_detail">
           <h4 class="center">
             Info
           </h4>
-          <p>
-            Discover your potential by enrolling in a full stack course in Pune, where you may gain access to all the resources you need to become an expert programmer in full stack.
+          <p class="course-des">
+            Discover your potential by enrolling in a full stack course in Pune, where you may gain access to all the
+            resources you need to become an expert programmer in full stack.
           </p>
         </div>
       </div>
-      <div class="col-md-6 col-lg-2 mx-auto info_col">
-        <div class="info_link_box">
+
+      <div class="col-md-6 col-lg-3 mx-auto info_col p-3">
+        <div class="info_link_box course-des">
           <h4 class="center">
             Links
           </h4>
           <div class="info_links">
             <div>
-            <a class="active" href="index.html">
-              Home
-            </a>
-            
-            <a class="" href="./blog.html">
-              Blogs
-            </a>
-          </div>
-         
+              <a class="active" href="index.html">
+                Home
+              </a>
+              
+              <a class="" href="./blog.html">
+                Blogs
+              </a>
+
+            </div>
 
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 info_col ">
-        <h4>
-          Get in touch with us 
-        </h4>
-      <div class="info_social">
-          <a href="">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-          <a href="">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-        </div>
-      </div>
+      
     </div>
   </div>
   <section class="footer_section">
     <div class="container">
-      <p>
+      <p style="font-size: 19px;">
         &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href=" www.fullstackdevelopercourseinpune.com">Fullstack developer Course in Pune</a>
+        <a href="www.fullstackdevelopercourseinpune.com">Fullstack developer Course in Pune</a>
       </p>
     </div>
   </section>
 </section>
+
 
   <!-- end info section -->
 
@@ -243,6 +402,7 @@
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
+  <script src="./js/script.js"></script>
   <!-- End Google Map -->
 
 </body>
