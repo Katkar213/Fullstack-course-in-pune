@@ -133,7 +133,7 @@ a:focus {
 
 .hero_area .hero_bg_box  {
   min-width: 100%;
-  background-color:#2f55d4;
+  /* background-color:#2f55d4; */
   min-height: 100%;
   margin-bottom: 8rem !important;
 }
@@ -178,7 +178,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #ffffff;
+  color: black;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -295,12 +295,13 @@ a:focus {
   color: #2f55d4 ;
 }
 
-.slider_section .detail-box h1 {
-  font-size: 3rem;
+.slider_section .detail-box h2 {
+  /* font-size: 3rem; */
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 15px;
-  color: #ffffff;
+  /* margin-bottom: 15px; */
+  color: orangered !important;
+  padding-top: 20px;
 }
 
 .slider_section .detail-box p {
@@ -358,8 +359,12 @@ a:focus {
 
 .slider_section .img-box img {
   width: 100%;
+  height:100%;
   /* -webkit-animation: upDown 5s infinite; */
           /* animation: upDown 5s infinite; */
+}
+.img-box{
+height:70vh;
 }
 
 @-webkit-keyframes upDown {
@@ -501,10 +506,10 @@ a:focus {
   background-color: #007fa4;
 }
 
-.about_section {
+/* .about_section {
   background-color: #2f55d4 ;
   color: #ffffff;
-}
+} */
 
 .about_section .heading_container {
   margin-bottom: 45px;
@@ -518,6 +523,7 @@ a:focus {
 
 .about_section .img-box img {
   max-width: 100%;
+  height:100%;
 }
 
 .about_section .detail-box h3 {
@@ -997,11 +1003,7 @@ position: relative;
   min-height: 4rem;
   margin-bottom: 20px;
 }
-.blog-image{
-  width:100% !important;
-  height:35vh;
-  margin-bottom: 1rem;
-}
+
 .read-more{
   float: right;
   position: absolute;
@@ -1078,26 +1080,25 @@ height:6rem;
 
 /* slider-div......................... */
 .slider-div{
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.652);
-  border-radius:0px 10px 0px 10px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.652);
+  border-radius: 10px;
   display: inline-block;
-  width:18vw;
-  padding:10px 15px;
-  margin: 10px;
+  /* width:18vw; */
+  padding:22px 4.4rem;
+  margin: 10px 28px;
 
 }
-.placed-div-card{
-  display:flex;
-  justify-content: space-between;
-}
+
 .logo-slide{
   display:inline-block;
   animation: slider 29s linear infinite;
 }
 .logo{
   white-space: nowrap;
+  overflow-x: hidden;
   margin-top: 3rem;
 }
+
 
 @keyframes slider{
   from{
@@ -1108,13 +1109,52 @@ height:6rem;
   }
 
 }
-
-.placed-images{
-height:4.3rem;
-width:4.3rem;
-border-radius: 50%;
-border:1px solid black;
+.placed-description p{
+  margin-bottom: 0px;
+  text-align: center;
 }
+.placed-images{
+/* height:4.3rem; */
+width:100%;
+text-align: center;
+/* border:1px solid black; */
+}
+.placed-images img{
+  height:5.8rem;
+  width:5.8rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.463);
+}
+.company-image{
+  height:2.2rem;
+  width:6.6rem;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+.company-image img{
+  width:100%;
+  height:100%;
+}
+
+
+/* live-project-image.............................................
+.................................................................. */
+
+.internshp-image img{
+  height: 100%;
+  width:100%;
+  border-radius: 20px;
+}
+
+.get-started-btn{
+  width:10vw;
+  padding:10px 0;
+  font-size: 17px;
+}
+
+/* end placements.................... */
+
+
 .blog-header{
 background-color:#2f55d4;
 }
@@ -1381,9 +1421,6 @@ color:black !important;
 
 
 
-.logo{
-  overflow: hidden;
-}
 
 
 
@@ -1596,6 +1633,9 @@ margin: 0px;
 /* header................. */
 .header_section{
 padding:8px 0px;
+
+box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
+
 }
 .black{
   color:black;
@@ -1619,7 +1659,7 @@ padding:8px 0px;
 .scrolled{
   margin-top: 0px !important;
   background-color: white;
-  box-shadow: 0px 0px 4px black;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
   color:black !important;
   transition:background 0.4s linear;
   }
@@ -1644,14 +1684,65 @@ p{
   font-weight: 400;
 }
 h1,h2,h3,h4,h5{
-  font-weight: 400;
+  font-weight: 464 !important;
+}
+
+
+/* comparison table........................
+......................................... */
+table tr td{
+  font-size: 23px;
+  text-align: center;
+  padding: 0.9rem 1rem;
+  border-bottom:none;
+  border-top: none;
+  /* border-left: 1px solid black; */
+  border-left: 1px solid lightgray;
+  font-weight: 420;
+}
+table tr th{
+  border-left: 1px solid lightgray;
+  padding: 0.6rem 1rem;
+}
+table{
+  /* border-radius: 15px; */
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.241);
+ 
+}
+table tr th{
+  border-left: 1px solid lightgray;
+  background-color: #2f55d4;
+  color:white;
+}
+
+
+
+/* iit visit..............................................................
+.............................................................. */
+.iit-visit-parent{
+background-color: #2f55d4;
+color:white;
+}
+.crousal-parent{
+  height:45vh;
+  /* border:2px solid white; */
+}
+.crousal-parent img{
+  height:43vh !important;
+  border-radius: 10px;
+  width:100%;
+}
+.iit-visti-left-div{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 /* contact-div */
 .contact-div{
-  background-color: #2f55d4;
-  color:white;
+  /* background-color: #2f55d4; */
+  color:black;
  
   height:3.3rem;
   display:flex;
@@ -1672,8 +1763,149 @@ h1,h2,h3,h4,h5{
   text-align: center;
 }
 
+
+
+
+/* blog............. */
+.blog-div{
+box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.255);
+  background-color: white;
+  border-radius: 13px;
+  padding:0.8rem 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.4s linear;
+}
+.blog-div:hover{
+  transform: translateY(-10px);
+}
+.blog-images{
+height:13rem;
+border-radius: 10px 0px 0px 10px;
+
+width:37rem;
+border:1px solid green;
+border: none;
+  outline:none;
+}
+.blog-image{
+  height:100%;
+  border-radius: 10px 0px 0px 10px;
+  width:100%;
+  border: none;
+  outline:none;
+}
+.blog-des{
+  padding-left:12px;
+}
+.read-more-btn{
+  display:flex;
+  justify-content:flex-end;
+
+}
+
+.slide img{
+  width:150px;
+  height:4rem;
+}
+.slick-dots{
+display:none !important;
+}
+.slide{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* training..........................................
+................................................ */
+.training-div{
+  margin: 40px 0;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.151);
+  border-radius: 6px;
+  text-align: left;
+  background-color: white;
+
+}
+.training-div-parent ul li{
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 12px;
+  
+}
+.training-div-parent ul li i{
+  margin-right: 6px;
+}
+
+
+/* internship..................... */
+.internship-description ul li{
+list-style-type: none;
+font-size: 20px;
+margin-top: 16px;
+}
+.internship-description ul li i{
+  margin-right: 10px;
+}
+
+
+/* get-certified div............................
+.................................... */
+.get-certified-div{
+  /* border:1px solid black; */
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.107);
+  padding:15px;
+  background-color: white;
+  border-left: 2px solid orange;
+}
+
+
+.certified-student-image{
+  width:100%;
+  height:100%;
+  /* border:4px solid grey; */
+  /* border-radius: 50%; */
+}
+
+
+/* header.....................................
+......................................... */
+.header-left-side,
+.header-right-side{
+  padding: 8rem;
+}
+
+/* .header-right-side{
+  width:15rem;
+  height:4rem;
+} */
+.header-right-side{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-right-side img{
+  height:100%;
+  width:100%;
+  
+}
+
+
+/* placement cards.............. */
+.placed-div-card h5{
+font-weight: 700;
+}
+
+
+
+
 /* mobile view............... */
 @media screen and (min-width:280px) and (max-width:500px){
+
 
 
   .whats-app-enroll-btn{
@@ -1745,6 +1977,27 @@ padding:24px 10px 30px 10px;
 }
 
 
+/* hero-session..... */
+/* .hero-session-parent{
+  margin-top: 7rem;
+}*/
+.header-left-side{
+  padding:8rem 2rem;
+} 
+.header-right-side{
+  padding:0rem 2rem;
+  width:70%;
+  margin: auto;
+}
+.header-right-side img{
+  /* width:70%; */
+
+}
+
+#detail-box{
+  height:20vh;
+  color:orangered !important;
+}
 
 
 /* hero area */
@@ -1759,14 +2012,18 @@ display:block !important;
 height:100% !important;
 }
 
-
+.layout_padding{
+  padding:60px 0px;
+}
 /* hero area ends */
 .carousel-item h1{
   font-size: 23px;
   padding:0px 6px;
 }
-#detail-box{
-  height:18vh !important;
+.img-box{
+  width: 80%;
+    height: 44vh;
+    margin: auto;
 }
 
 .logo-dscip {
@@ -1865,7 +2122,134 @@ height:auto;
 }
 .header_section{
   padding:8px 15px;
+  background-color: white;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
   }
+
+  .our-mission-parent{
+display:none;
+  }
+  /* .scrolled .navbar-toggler span ,
+  .scrolled .custom_nav-container .navbar-toggler span::before,
+  .scrolled  .custom_nav-container .navbar-toggler span::after
+  {
+    background-color: white !important;
+  } */
+.navbar-toggler span {
+  background-color: #000000 !important;
+}
+
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
+  background-color: #000000 !important;
+}
+.fa-envelope{
+display:none !important;
+}
+
+
+           /* changes */
+           .logo-dscip{
+            width:12rem !important;
+            height:3rem !important;
+        }
+        .header_section{
+         height:5.8rem;
+        }
+        .navbar-nav{
+            margin-top: 1.7rem;
+        width:100%;
+        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
+        }
+        .hide{
+            display:none;
+        }
+.number{
+  font-size: 18px !important;
+}
+.course-des{
+  font-size: 17px;
+}
+.contact_link_box a{
+  font-size: 17px;
+}
+/* h2{
+  font-size: 1.7rem !important;
+  font-size: 400;
+}
+h3{
+  font-size: 1.45rem;
+  font-size: 400;
+}
+h4{
+  font-size: 1.4rem;
+  font-size: 400;
+} */
+.blog-cards-parent{
+  margin-top: 4rem;
+}
+.info_contact h4{
+  text-align: center;
+}
+.course-des{
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+ 
+  margin: 0px;
+}
+.info_section{
+  padding:45px 12px 15px 12px;
+}
+.footer_section .container p{
+font-size: 16px !important;
+}
+
+
+.choose-us-box{
+  padding:1rem 1rem;
+}
+.blog-images{
+width:100%;
+border-radius: 10px !important;
+}
+.blog-des h4{
+  margin-top: 7px;
+}
+.blog-image{
+  border-radius: 10px !important;
+}
+
+.blog-div{
+  flex-direction: column;
+}
+
+/* .blog-des h4{
+font-size: 18px;
+}
+.blog-des p{
+  font-size: 15px;
+  line-height: normal;
+} */
+
+
+/* blog-image...................... */
+.blog-div{
+  margin-top: 5rem;
+}
+.blog-des{
+padding-left: 0px;
+}
+
+
+/* internship-description */
+.get-started-btn{
+width:auto;
+padding:10px 10px;
+}
+.internship-description h2 {
+font-size: 29px;
+}
 
 }
 
@@ -1899,4 +2283,18 @@ height:auto;
  margin: auto;
 }
 
+}
+
+.slide img{
+  width:150px;
+  height:4rem;
+}
+.slick-dots{
+display:none !important;
+}
+.slide{
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
