@@ -1610,7 +1610,7 @@ margin: 0px;
 }
 
 .box{
-  height:55vh;
+  /* height:55vh; */
 }
 
 .img-box-3{
@@ -2174,6 +2174,11 @@ font-weight: 700;
 .project-title-6{
   background-color:rgba(0, 255, 255, 0.534) ;
   color:  darkcyan;
+}
+
+
+.client_section .owl-carousel .owl-nav{
+  margin-top: 2px;
 }
  
 
