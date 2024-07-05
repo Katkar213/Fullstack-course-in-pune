@@ -13,7 +13,7 @@ html {
 }
 
 .layout_padding {
-  padding: 90px 0;
+  padding: 32px 0;
 }
 
 .layout_padding2 {
@@ -93,7 +93,78 @@ a:focus {
           box-shadow: none;
 }
 
-/*header section*/
+/* header.....................................
+......................................... */
+.header-left-side
+{
+  padding: 5rem;
+}
+.header-right-side{
+padding:2rem 4rem;
+}
+
+.header-right-side div{
+  height:100%;
+  width:100%;
+}
+.header_section{
+  padding:8px 0px;
+  
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
+  
+  }
+  .black{
+    color:black;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+   
+    margin: 0px;
+  }
+  .client_info h6{
+    font-size: 18px !important;
+  }
+  .powered-by{
+    display:inline-block;
+    color:white;
+    padding:0px;
+    
+   
+  }
+  
+  .scrolled{
+    margin-top: 0px !important;
+    background-color: white;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
+    color:black !important;
+    transition:background 0.4s linear;
+    }
+  
+    .scrolled .powered-by{
+      display:inline-block;
+  color:black;
+    }
+  
+    .list-scroll .nav-item a{
+      color:black !important;
+    }
+    .active{
+      color:orange !important;
+    }
+    .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+      color: orange !important;
+    }
+
+.header-right-side{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-right-side img{
+  height:100%;
+  width:100%;
+  
+}
 .hero_area {
   position: relative;
  
@@ -264,8 +335,32 @@ a:focus {
   top: 0;
 }
 
-/*end header section*/
-/* slider section */
+
+
+/* logo.................. */
+.logo-dscip{
+  height:3rem !important;
+  width:17rem !important;
+  padding-left: 3rem;
+}
+
+
+.header-slider{
+  margin-top: 7rem;
+}
+
+/*end header.....................................
+......................................... */
+
+
+
+
+
+
+
+
+/* slider section..........................................
+.....................................................*/
 .slider_section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -360,8 +455,7 @@ a:focus {
 .slider_section .img-box img {
   width: 100%;
   height:100%;
-  /* -webkit-animation: upDown 5s infinite; */
-          /* animation: upDown 5s infinite; */
+
 }
 .img-box{
 height:70vh;
@@ -506,10 +600,15 @@ height:70vh;
   background-color: #007fa4;
 }
 
-/* .about_section {
-  background-color: #2f55d4 ;
-  color: #ffffff;
-} */
+
+
+/*end slider section..........................................
+.....................................................*/
+
+
+
+/* about us..................................................
+............................................................... */
 
 .about_section .heading_container {
   margin-bottom: 45px;
@@ -625,35 +724,112 @@ height:70vh;
   background-color: #007fa4;
 }
 
-/*team section */
-.team_section {
+
+/*end about us..................................................
+............................................................... */
+
+/* why choose us..........................
+............................*/
+.choose-us-box{
+  
+  padding:3rem 1rem;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.46);
+  border-radius: 5px;
+  width:24vw;
+  transition:0.5s;
+
+}
+.choose-us-box:hover{
+  transform: translateY(-20px);
+}
+.choose-us-box:hover h5{
+  font-size: 21px;
+}
+
+.why_section:hover .box .img-box {
+  
+  color:white;
+}
+
+.why_container{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+/*end why choose us..........................
+............................*/
+
+
+/* footer section....................................................
+................................................................*/
+.footer_section {
+  position: relative;
+  color: white;
+  z-index: 1000;
   text-align: center;
+}
+
+.footer_section p {
+  color: white;
+
+  margin: 0;
+}
+
+.footer_section p a {
+  color: inherit;
+}
+
+
+.info_section {
   background-color: #2f55d4 ;
+  color: #ffffff;
+  padding: 45px 0 15px 0;
+}
+
+.info_section h4 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.info_section .info_col {
+  margin-bottom: 30px;
+}
+
+.info_section .info_contact .contact_link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info_section .info_contact .contact_link_box a {
+  margin: 5px 0;
   color: #ffffff;
 }
 
-.team_section .heading_container {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.info_section .info_contact .contact_link_box a i {
+  margin-right: 5px;
 }
 
-.team_section .team_container {
-  padding: 0 15px;
+.info_section .info_contact .contact_link_box a:hover {
+  color: #00bbf0;
 }
 
-.team_section .team_container .box {
-  padding: 35px 0 0 0;
-  border-radius: 5px;
-  overflow: hidden;
-  -webkit-transition: all .1s;
-  transition: all .1s;
-  margin-top: 45px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
-  background: linear-gradient(to bottom, #002759, #002b64);
+.info_section .info_social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
 }
 
-.team_section .team_container .box .img-box {
+.info_section .info_social a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,44 +839,813 @@ height:70vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.team_section .team_container .box .img-box img {
-  width: 120px;
+  color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #ffffff;
+  margin-right: 10px;
+  font-size: 24px;
 }
 
-.team_section .team_container .box .detail-box {
-  margin: 25px 0;
-}
-
-.team_section .team_container .box .detail-box h5 {
+.info_section .info_social a:hover {
   color: #00bbf0;
-  font-weight: 600;
-  position: relative;
 }
 
-.team_section .team_container .box .social_box {
-  padding: 10px 45px 20px 45px;
+.info_section .info_links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap:20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.team_section .team_container .box .social_box a {
+.info_section .info_links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
   color: #ffffff;
-  font-size: 22px;
 }
 
-.team_section .team_container .box .social_box a:hover {
+.info_section .info_links a:hover {
   color: #00bbf0;
 }
 
-/*team section end*/
+.info_section form input {
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+  width: 100%;
+  height: 45px;
+  color: #ffffff;
+  outline: none;
+}
+
+.info_section form input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.info_section form input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.info_section form input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.info_section form input::placeholder {
+  color: #ffffff;
+}
+
+.info_section form button {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  padding: 10px 55px;
+  background-color: #00bbf0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  margin-top: 15px;
+}
+
+.info_section form button:hover {
+  background-color: #007fa4;
+}
+
+.info_section{
+  margin-top: 20px !important;
+}
+
+/* placed students................. */
+.placed-student-image{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+
+
+
+/* end footer.......................................
+....................................................... */
+
+
+
+
+/* courses..................................\
+............................................ */
+
+.why-us-crousal-right{
+  height:100% !important;
+}
+
+/* blogs-page....................................................................
+..............................................................*/
+.blog-card{
+  background-color: white;
+  color:black;
+  width:26vw;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.547);
+  margin-top: 3rem;
+transition:0.5s linear;
+position: relative;
+}
+.blog-card h5,
+.blog-card p{
+  padding:0 0.9rem;
+  padding-bottom: 1rem;
+}
+.blog-card:hover{
+  transform: translateY(-20px);
+}
+.blog-cards-parent{
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.color:hover{
+  background-color: #2f55d4 ;
+  color:white;
+  
+}
+
+.blog-hero-area{
+  min-height: 4rem;
+  margin-bottom: 20px;
+}
+
+.read-more{
+  float: right;
+  position: absolute;
+  bottom:0;
+  right:0;
+  padding:0 4px;
+  cursor: pointer;
+  color:blue !important;
+}
+.blog-image+h5{
+  font-weight: 600;
+}
+
+/* ...............................end blog page....
+................................................. */
+
+
+
+
+/* contact form...........................................
+..........................................*/
+
+.contact-form{
+  box-shadow: 0px 0px 5px grey;
+  padding:30px;
+  border-radius: 10px;
+  width:80%;
+  margin: auto;
+}
+
+.three-contact-cards{
+height:6rem;
+}
+
+.Three-contact-cards:hover{
+  background-color: #2f55d4 ;
+  color:white;
+}
+.Three-contact-cards-parent{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+
+}
+
+
+/* placement crousal...............................
+.....................................*/
+.slider-div{
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.652);
+  border-radius: 10px;
+  display: inline-block;
+  padding:22px 4.4rem;
+  margin: 10px 28px;
+
+}
+
+.logo-slide{
+  display:inline-block;
+  animation: slider 40s linear infinite;
+}
+.logo{
+  white-space: nowrap;
+  overflow-x: hidden;
+  margin-top: 3rem;
+}
+
+
+
+
+@keyframes slider{
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+
+}
+.placed-description p{
+  margin-bottom: 0px;
+  text-align: center;
+}
+.placed-images{
+width:100%;
+text-align: center;
+
+}
+.placed-images img{
+  height:5.8rem;
+  width:5.8rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.463);
+}
+.company-image{
+  height:2.2rem;
+  width:6.6rem;
+  margin: auto;
+}
+.company-image img{
+  width:100%;
+  height:100%;
+}
+
+/* placed students... */
+
+.placed-student-image{
+  height:45px;
+  width:45px;
+  border-radius: 50%;
+
+}
+.placed-student-image img{
+  width:100%;
+  height:100%;
+  border-radius: 50%;
+}
+.placement-slider-div{
+ box-shadow: 0px 0px 2px 2px rgba(211, 211, 211, 0.464);
+  width:16rem;
+
+  border-radius:14px;
+
+  /* height:180px; */
+  width:372px;
+  padding:20px 26px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+
+
+.placed-student-info{
+  display:flex;
+  /* border:1px solid black; */
+
+ 
+  align-items: center;
+  width:199px;
+
+  justify-content: space-between;
+}
+.placed-student-name img{
+  height:25.6px;
+  width:80px;
+}
+
+.placed-student-name{
+  /* border:1px solid black; */
+  height:49.6px ;
+  width:134px;
+}
+.student-conversion{
+  width:100%;
+  margin-top: 18px;
+  /* height:15px; */
+  /* border: 1px solid black; */
+
+}
+.student-conversion img{
+  height:100%;
+  width:100%;
+}
+
+
+
+
+/*end placement crousal...............................
+.....................................*/
+
+
+
+/* live-project-image.............................................
+.................................................................. */
+
+.internshp-image img{
+  height: 100%;
+  width:100%;
+  border-radius: 20px;
+}
+
+.get-started-btn{
+  width:10vw;
+  padding:10px 0;
+  font-size: 17px;
+}
+
+
+
+
+.blog-header{
+background-color:#2f55d4;
+}
+.sub_page .hero_area {
+  background-color:#2f55d4  !important ;
+}
+
+
+.sub_page .hero_area {
+  min-height: auto;
+  background:transparent;
+}
+
+/* review.................................................
+......................................................*/
+.client_section .box .detail-box{
+height:50vh;
+background-color: #ffffff;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+    padding: 50px 25px 25px 25px;
+}
+/* end reviews...............................................
+.......................................... */
+
+
+/* partner companies..............................*/
+.avatar{
+  width:6rem;
+  height:3rem;
+}
+
+
+/* certificate-div */
+.full-stack-course-image{
+  width:60%;
+  height:55vh;
+  margin: auto;
+}
+.certificate-div{
+  padding:0rem !important;
+}
+.full-stack-course-image img{
+  height:100%;
+  width:100%;
+}
+
+
+
+
+
+
+
+
+/* gallery.................. */
+.gallery-div{
+  box-shadow: 0px 0px 5px grey;
+  margin-top: 20px;
+  width:90%;
+  padding:0px !important;
+  height:49vh;
+  margin-top: 40px;
+  overflow: hidden;
+ 
+}
+.gallery-div img{
+  width:100%;
+  height:100%;
+}
+.gallery-div:hover img{
+  transform: scale(1.2) rotateY(20deg);
+  transition: transform 0.3s ease;
+}
+
+
+
+
+
+/* why us crousal...............................
+.......................................*/
+.why-us-crousal-parent .carousel-item{
+  background: url(../images/Why-us-crousal/A4\ -\ 58.jpg);
+  /* border:1px solid black; */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width:100%;
+  color:black !important;
+  margin-top: 30px !important;
+  height:94vh;
+
+  margin: auto;
+}
+
+
+
+.carousel-control-prev, .carousel-control-next {
+color:black !important;
+
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+  border:2px solid black;
+  display:none !important;
+}
+
+.why-us-crousal-left{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* .box{
+  height:auto !important;
+ 
+} */
+
+.service_section .box{
+  height: 68vh !important;
+  box-shadow: 0px 0px 2px 2px grey;
+}
+
+
+
+
+
+/* footer-in-iframe-tag */
+.footer-iframe{
+  height:61.2vh;
+  margin-top: 20px !important;
+    width:100%;
+}
+
+
+
+
+
+
+/* layout-padding............... */
+
+
+
+/* limited seats........................... */
+.limited-seats{
+  animation:color 1s linear infinite;
+  font-size: 22px !important;
+}
+@keyframes color{
+  0%{
+    color:white;
+  }
+  50%{
+   
+    color:orange;
+  }
+  100%{
+    color:white;
+  }
+}
+
+/* whats app image........... */
+
+.whats-app-enroll-btn{
+  display:flex;
+  border:none;
+  outline:none;
+  gap:1rem;
+}
+
+
+.fa-whatsapp{
+font-size: 26px !important;
+
+
+}
+
+.fa-check{
+  font-size: 26px !important;
+
+  
+  }
+
+
+.whtasapp-btn{
+  padding:10px;
+  background-color: #48c456;
+  border:none  !important;
+  outline:none !important;
+  font-size: 25px;
+  color:white;
+  border-radius: 10px;
+}
+.enroll-btn{
+  padding:11px;
+  background-color: rgba(0, 0, 255, 0.656);
+  border:none !important;
+  outline:none !important;
+  font-size: 25px;
+  color:white;
+  border-radius: 10px;
+}
+
+/* career-path.................................
+........................................ */
+.path-way-image{
+  width:100%;
+  padding-top: 3rem;
+ 
+ 
+ 
+}
+.path-way-image img{
+  height:100%;
+  
+  width:100%;
+
+}
+
+
+
+
+
+
+/* contact-us-parent.......... */
+.contact-us-parent{
+ background-color: #f8f9fc !important;
+padding:2rem;
+color:white;
+  margin: 20px 0;
+  
+}
+.contact-us-parent .row{
+width:85%;
+margin: auto;
+}
+.contact-info{
+  height: 100%;
+background-color:#2f55d4 ;  
+padding:24px 40px 40px 40px;
+
+
+}
+
+.contact-info span{
+  font-size: 22px;
+   padding:7px;
+}
+.contact-us-left{
+  padding:0rem 4rem;
+}
+.contact-form{
+
+  background-color: white;
+  border-radius: 10px;
+  height:100%;
+  width:100%;
+}
+.contact-us-right{
+  /* border:2px solid black; */
+  padding:0rem 5rem;
+}
+.form-rows{
+  margin-bottom: 20px;
+}
+.form-rows h5{
+  color:black;
+  margin-bottom: 10px;
+}
+.form-rows span{
+  color:orange;
+}
+.form-rows input{
+  height:47px;
+  border-radius: 4px;
+  font-size: 19px;
+  padding:3px 14px 3px 4px;
+ border:1px solid grey;
+ outline:none;
+}
+.enroll-btn{
+  height:54px;
+  font-size: 22px;
+  
+}
+
+
+/* changes...................................................................................................
+.................................................................
+.................................................................. */
+
+
+/* why choose us........................................................ */
+
+.detail-box ul li{
+text-align: left !important;
+margin-top: 5px;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+
+margin: 0px;
+}
+.heading_container p{
+  text-align: left !important;
+  margin-top: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  
+  margin: 0px;
+}
+.about_section .heading_container{
+  margin-bottom: 20px;
+}
+
+.course-des{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+ 
+  margin: 0px;
+}
+
+
+
+/* courses.............................................. */
+
+.course-image-div{
+  
+  height:29vh;
+  width:100%;
+}
+.course-image-div img{
+  display:block;
+
+  border-radius: 10px 10px 0px 0px;
+  height:100%;
+  width:100%;
+}
+.course-div{
+
+ 
+  box-shadow: 0px 0px 4px black;
+  border-radius: 10px;
+  transition:0.5s linear;
+}
+.course-div:hover{
+  transform: translateY(-20px);
+}
+
+
+.course-image-decription {
+  padding:0px 15px;
+}
+
+.course-image-decription a{
+  color:black;
+  cursor: pointer;
+}
+
+.course-image-decription a:hover{
+  color:rgba(0, 0, 255, 0.763);
+}
+.course-features{
+  display:flex;
+  gap:9px;
+
+}
+.course-features p{
+  font-size: 18px !important;
+  font-weight: 500;
+  color:rgba(0, 0, 0, 0.796) !important;
+}
+.course-features p p{
+  text-align: left;
+}
+
+.buttons{
+  display:flex;
+}
+.buttons button{
+  width:50%;
+  padding: 15px 0;
+  border: none;
+  outline:none;
+}
+.buttons .btn-primary{
+  border-radius: 0px 0px 10px 0px !important;
+  color:white !important;
+}
+.buttons .btn-primary a{
+  color:white !important;
+}
+
+.buttons .btn-success{
+  color:black !important;
+  font-weight: 405;
+  background-color: rgba(211, 211, 211, 0.452);
+  border-radius: 0px 0px 0px 10px !important;
+}
+
+.buttons .btn-success a{
+  color:black !important;
+}
+
+
+.service_section .box .img-box{
+  width:100%;
+  height:30vh;
+ 
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.service_section .box{
+  transition:0.5s linear;
+}
+
+
+.service_section .box:hover{
+  transform: translateY(-30px);
+}
+
+.img-box-1{
+  width:100%;
+  height:30vh;
+  background: url("../images/mern.png");
+}
+
+.img-box-2{
+  width:100%;
+  height:30vh;
+  background: url("../images/mean.png");
+}
+
+.box{
+  height:55vh;
+}
+
+.img-box-3{
+  width:100%;
+  height:30vh;
+  background: url("../images/Fullstackjava.jpg");
+}
+.service_section .box .img-box img{
+width:100%;
+
+}
+
+
+/* end courses..........................
+.............................................. */
+
+p{
+  font-size: 16px;
+  font-weight: 400;
+}
+h1,h2,h3,h4,h5{
+  font-weight: 464 !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* students reviews........................................
+..................................................... */
 /* client section start */
 .client_section .heading_container {
   margin-bottom: 30px;
@@ -939,753 +1884,8 @@ height:70vh;
   background-color: #007fa4;
 }
 
-/* footer section*/
-.footer_section {
-  position: relative;
-  color: white;
-  z-index: 1000;
-  text-align: center;
-}
-
-.footer_section p {
-  color: white;
-
-  margin: 0;
-}
-
-.footer_section p a {
-  color: inherit;
-}
-/*# sourceMappingURL=style.css.map */
-
-
-/* my css */
-
-/* courses.................................. */
-
-.why-us-crousal-right{
-  height:100% !important;
-}
-
-/* blogs-page................................................................... */
-.blog-card{
-  background-color: white;
-  color:black;
-  width:26vw;
-  /* border:2px solid black; */
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.547);
-  /* height:40vh; */
-  margin-top: 3rem;
-  /* padding: 3px; */
-transition:0.5s linear;
-position: relative;
-}
-.blog-card h5,
-.blog-card p{
-  padding:0 0.9rem;
-  padding-bottom: 1rem;
-}
-.blog-card:hover{
-  transform: translateY(-20px);
-}
-.blog-cards-parent{
-  display:flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.color:hover{
-  background-color: #2f55d4 ;
-  color:white;
-  
-}
-
-.blog-hero-area{
-  min-height: 4rem;
-  margin-bottom: 20px;
-}
-
-.read-more{
-  float: right;
-  position: absolute;
-  bottom:0;
-  right:0;
-  padding:0 4px;
-  cursor: pointer;
-  color:blue !important;
-}
-.blog-image+h5{
-  font-weight: 600;
-}
-
-
-/* why choose us.............. */
-.choose-us-box{
-  /* border:1px solid black; */
-  padding:3rem 1rem;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.46);
-  border-radius: 5px;
-  width:24vw;
-  transition:0.5s;
-
-}
-.choose-us-box:hover{
-  /* background-color: #2f55d4 ; */
-  /* color:white; */
-  transform: translateY(-20px);
-}
-.choose-us-box:hover h5{
-  font-size: 21px;
-}
-
-.why_section:hover .box .img-box {
-  /* border:5px solid white; */
-  color:white;
-}
-/* .box p{
-  text-align: left;
-} */
-.why_container{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-/* contact form........................................ */
-
-.contact-form{
-  box-shadow: 0px 0px 5px grey;
-  padding:30px;
-  border-radius: 10px;
-  width:80%;
-  margin: auto;
-}
-
-.three-contact-cards{
-/* border:1px solid black; */
-height:6rem;
-}
-
-.Three-contact-cards:hover{
-  background-color: #2f55d4 ;
-  color:white;
-}
-.Three-contact-cards-parent{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
- 
-
-}
-
-
-/* slider-div......................... */
-.slider-div{
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.652);
-  border-radius: 10px;
-  display: inline-block;
-  /* width:18vw; */
-  padding:22px 4.4rem;
-  margin: 10px 28px;
-
-}
-
-.logo-slide{
-  display:inline-block;
-  animation: slider 29s linear infinite;
-}
-.logo{
-  white-space: nowrap;
-  overflow-x: hidden;
-  margin-top: 3rem;
-}
-
-
-@keyframes slider{
-  from{
-    transform: translateX(0%);
-  }
-  to{
-    transform: translateX(-100%);
-  }
-
-}
-.placed-description p{
-  margin-bottom: 0px;
-  text-align: center;
-}
-.placed-images{
-/* height:4.3rem; */
-width:100%;
-text-align: center;
-/* border:1px solid black; */
-}
-.placed-images img{
-  height:5.8rem;
-  width:5.8rem;
-  border-radius: 50%;
-  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.463);
-}
-.company-image{
-  height:2.2rem;
-  width:6.6rem;
-  /* border: 1px solid black; */
-  margin: auto;
-}
-.company-image img{
-  width:100%;
-  height:100%;
-}
-
-
-/* live-project-image.............................................
-.................................................................. */
-
-.internshp-image img{
-  height: 100%;
-  width:100%;
-  border-radius: 20px;
-}
-
-.get-started-btn{
-  width:10vw;
-  padding:10px 0;
-  font-size: 17px;
-}
-
-/* end placements.................... */
-
-
-.blog-header{
-background-color:#2f55d4;
-}
-.sub_page .hero_area {
-  background-color:#2f55d4  !important ;
-}
-
-
-.sub_page .hero_area {
-  min-height: auto;
-  background:transparent;
-}
-
-/* review.................. */
-.client_section .box .detail-box{
-height:52vh;
-}
-
-/* partner companies..............................*/
-.avatar{
-  width:6rem;
-  height:3rem;
-}
-
-
-/* certificate-div */
-.full-stack-course-image{
-  width:60%;
-  height:55vh;
-  margin: auto;
-}
-.certificate-div{
-  padding:0rem !important;
-}
-.full-stack-course-image img{
-  height:100%;
-  width:100%;
-}
-
-
-/* logo.................. */
-.logo-dscip{
-  height:3rem !important;
-  width:17rem !important;
-  padding-left: 3rem;
-}
-
-/* footer */
-.info_section{
-  margin-top: 20px !important;
-}
-
-/* placed students................. */
-.placed-student-image{
-  width:100%;
-  height:100%;
-  border-radius: 50%;
-}
-
-
-
-
-/* gallery.................. */
-.gallery-div{
-  box-shadow: 0px 0px 5px grey;
-  margin-top: 20px;
-  width:90%;
-  padding:0px !important;
-  height:49vh;
-  margin-top: 40px;
-  overflow: hidden;
- 
-}
-.gallery-div img{
-  width:100%;
-  height:100%;
-}
-.gallery-div:hover img{
-  transform: scale(1.2) rotateY(20deg);
-  transition: transform 0.3s ease;
-   /* Optional: Add smooth transition */
-}
-
-.service_section .box .img-box{
-  width:100%;
-  height:30vh;
- 
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  
-}
-.service_section .box{
-  transition:0.5s linear;
-}
-
-
-.service_section .box:hover{
-  transform: translateY(-30px);
-}
-
-.img-box-1{
-  width:100%;
-  height:30vh;
-  background: url("../images/mern.png");
-}
-
-.img-box-2{
-  width:100%;
-  height:30vh;
-  background: url("../images/mean.png");
-}
-
-.box{
-  height:68vh;
-}
-
-.img-box-3{
-  width:100%;
-  height:30vh;
-  background: url("../images/Fullstackjava.jpg");
-}
-.service_section .box .img-box img{
-width:100%;
-
-}
-
-
-
-/* why us crousal.................. */
-.why-us-crousal-parent .carousel-item{
-  background: url(../images/Why-us-crousal/A4\ -\ 58.jpg);
-  /* border:1px solid black; */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width:100%;
-  color:black !important;
-  margin-top: 30px !important;
-  height:94vh;
-
-  margin: auto;
-}
-
-
-.why-us-crousal-parent .one{
-  background: url(../images/Why-us-crousal/A4\ -\ 58.jpg);
-  /* border:1px solid black; */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
- 
-  color:black !important;
-  margin-top: 30px !important;
-  height:94vh;
-  
-  margin: auto;
-}
-
-.why-us-crousal-parent .two{
-  background: url(../images/Why-us-crousal/why-us-slide-2.jpg);
-  /* border:1px solid black; */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  color:black !important;
-  margin-top: 30px !important;
-  height:94vh;
-
-  margin: auto;
-}
-
-
-
-.why-us-crousal-parent .three{
-  background: url(../images/Why-us-crousal/why-us-slide-3.jpg);
-  /* border:1px solid black; */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  color:black !important;
-  margin-top: 30px !important;
-  height:94vh;
-
-  margin: auto;
-}
-
-
-.why-us-crousal-parent .four{
-  background: url(../images/Why-us-crousal/why-us-slide-4.jpg);
-  /* border:1px solid black; */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  color:black !important;
-  margin-top: 30px !important;
-  height:94vh;
-
-  margin: auto;
-}
-
-.carousel-indicators li{
-  background-color: black;
-}
-.carousel-indicators{
-  width:50%;
-  margin: auto;
-}
-
-.why-us-crousal-parent .five{
-  background: url(../images/Why-us-crousal/why-us-slide-5.jpg);
-  /* border:1px solid black; */
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  color:black !important;
-  margin-top: 30px !important;
-  height:94vh;
-
-  margin: auto;
-}
-
-
-.carousel-control-prev, .carousel-control-next {
-color:black !important;
-
-}
-.carousel-control-next-icon,
-.carousel-control-prev-icon{
-  border:2px solid black;
-  display:none !important;
-}
-
-.why-us-crousal-left{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.box{
-  height:auto !important;
-}
-
-.service_section .box{
-  height: 68vh !important;
-/* height:auto !important; */
-}
-
-
-
-
-
-/* footer-in-iframe-tag */
-.footer-iframe{
-  height:61.2vh;
-  margin-top: 20px !important;
-    width:100%;
-}
-
-
-
-
-
-
-/* layout-padding............... */
-
-/* .layout_padding {
-  padding: 70px 0 !important;
-} */
-
-/* limited seats........................... */
-.limited-seats{
-  animation:color 1s linear infinite;
-  font-size: 22px !important;
-}
-@keyframes color{
-  0%{
-    color:white;
-  }
-  50%{
-   
-    color:orange;
-  }
-  100%{
-    color:white;
-  }
-}
-
-/* whats app image........... */
-
-.whats-app-enroll-btn{
-  display:flex;
-  border:none;
-  outline:none;
-  gap:1rem;
-}
-
-
-.fa-whatsapp{
-font-size: 26px !important;
-
-
-}
-
-.fa-check{
-  font-size: 26px !important;
-
-  
-  }
-
-
-.whtasapp-btn{
-  padding:10px;
-  background-color: #48c456;
-  border:none  !important;
-  outline:none !important;
-  font-size: 25px;
-  color:white;
-  border-radius: 10px;
-}
-.enroll-btn{
-  padding:11px;
-  background-color: rgba(0, 0, 255, 0.656);
-  border:none !important;
-  outline:none !important;
-  font-size: 25px;
-  color:white;
-  border-radius: 10px;
-}
-
-
-
-/* contact-us-parent.......... */
-.contact-us-parent{
- background-color: #f8f9fc !important;
-padding:2rem;
-color:white;
-  margin: 20px 0;
-  
-}
-.contact-us-parent .row{
-width:85%;
-margin: auto;
-}
-.contact-info{
-  height: 100%;
-background-color:#2f55d4 ;  
-padding:24px 40px 40px 40px;
-
-
-}
-
-.contact-info span{
-  font-size: 22px;
-   padding:7px;
-}
-.contact-us-left{
-  padding:0rem 4rem;
-}
-.contact-form{
-
-  background-color: white;
-  border-radius: 10px;
-  height:100%;
-  width:100%;
-}
-.contact-us-right{
-  /* border:2px solid black; */
-  padding:0rem 5rem;
-}
-.form-rows{
-  margin-bottom: 20px;
-}
-.form-rows h5{
-  color:black;
-  margin-bottom: 10px;
-}
-.form-rows span{
-  color:orange;
-}
-.form-rows input{
-  height:47px;
-  border-radius: 4px;
-  font-size: 19px;
-  padding:3px 14px 3px 4px;
- border:1px solid grey;
- outline:none;
-}
-.enroll-btn{
-  height:54px;
-  font-size: 22px;
-  
-}
-
-
-/* changes...................................................................................................
-.................................................................
-.................................................................. */
-
-
-/* why choose us........................................................ */
-
-.detail-box ul li{
-text-align: left !important;
-margin-top: 5px;
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
-
-margin: 0px;
-}
-.heading_container p{
-  text-align: left !important;
-  margin-top: 5px;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-  
-  margin: 0px;
-}
-.about_section .heading_container{
-  margin-bottom: 20px;
-}
-
-.course-des{
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
- 
-  margin: 0px;
-}
-
-
-
-/* courses.............................................. */
-
-.course-image-div{
-  
-  height:33vh;
-  width:100%;
-
-  /* border:1px solid black; */
-}
-.course-image-div img{
-  display:block;
-
-  border-radius: 10px 10px 0px 0px;
-  height:100%;
-  width:100%;
-}
-.course-div{
-  /* background-color:#f8f9fc !important; */
-  /* border:1px solid black; */
- 
-  box-shadow: 0px 0px 4px black;
-  border-radius: 10px;
-  transition:0.5s linear;
-}
-.course-div:hover{
-  transform: translateY(-20px);
-}
-.course-image-decription a{
-  color:black;
-  cursor: pointer;
-}
-/* .navbar-toggle{
-  color:black;
-  z-index: 2200;
-} */
-
-/* header................. */
-.header_section{
-padding:8px 0px;
-
-box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
-
-}
-.black{
-  color:black;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
- 
-  margin: 0px;
-}
-.client_info h6{
-  font-size: 18px !important;
-}
-.powered-by{
-  display:inline-block;
-  color:white;
-  padding:0px;
-  
- 
-}
-
-.scrolled{
-  margin-top: 0px !important;
-  background-color: white;
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.353);
-  color:black !important;
-  transition:background 0.4s linear;
-  }
-
-  .scrolled .powered-by{
-    display:inline-block;
-color:black;
-  }
-
-  .list-scroll .nav-item a{
-    color:black !important;
-  }
-  .active{
-    color:orange !important;
-  }
-  .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-    color: orange !important;
-  }
-
-p{
-  font-size: 16px;
-  font-weight: 400;
-}
-h1,h2,h3,h4,h5{
-  font-weight: 464 !important;
-}
+/* student-reviews-end............................
+..................................... */
 
 
 /* comparison table........................
@@ -1696,7 +1896,7 @@ table tr td{
   padding: 0.9rem 1rem;
   border-bottom:none;
   border-top: none;
-  /* border-left: 1px solid black; */
+
   border-left: 1px solid lightgray;
   font-weight: 420;
 }
@@ -1705,7 +1905,7 @@ table tr th{
   padding: 0.6rem 1rem;
 }
 table{
-  /* border-radius: 15px; */
+
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.241);
  
 }
@@ -1719,13 +1919,14 @@ table tr th{
 
 /* iit visit..............................................................
 .............................................................. */
+
 .iit-visit-parent{
 background-color: #2f55d4;
 color:white;
 }
 .crousal-parent{
   height:45vh;
-  /* border:2px solid white; */
+
 }
 .crousal-parent img{
   height:43vh !important;
@@ -1741,7 +1942,6 @@ color:white;
 
 /* contact-div */
 .contact-div{
-  /* background-color: #2f55d4; */
   color:black;
  
   height:3.3rem;
@@ -1756,13 +1956,43 @@ color:white;
 .call-image{
   height:3.2rem !important;
   padding:0px 18px;
-  /* border:1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+
+
+
+
+
+/* google-reviews...........................................
+................................................... */
+.google-review-image{
+  width:80%;
+  text-align: center;
+
+}
+.google-review-image img{
+  height:100%;
+  width:96%;
+}
+
+
+/* career-path-image............
+............................... */
+.career-path-image{
+  width:100%;
+  text-align: center;
+
+}
+
+.career-path-image img{
+  height:100%;
+  width:80%;
+
+} 
 
 
 
@@ -1775,6 +2005,7 @@ box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.255);
   display: flex;
   justify-content: space-between;
   transition: 0.4s linear;
+  flex-direction: column;
 }
 .blog-div:hover{
   transform: translateY(-10px);
@@ -1783,7 +2014,7 @@ box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.255);
 height:13rem;
 border-radius: 10px 0px 0px 10px;
 
-width:37rem;
+/* width:37rem; */
 border:1px solid green;
 border: none;
   outline:none;
@@ -1817,6 +2048,27 @@ display:none !important;
   justify-content: center;
   align-items: center;
 }
+
+
+/* blog-cards.........................
+.......................................... */
+
+.blogs-div{
+  border:1px solid black;
+  height:38vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-1{
+background: url("../images/blogs/fullstack-blog-1.webp");
+}
+.blog-2{
+  background: url("../images/blogs/fullstack-blog-2.jpg");
+  }
+  .blog-3{
+    background: url("../images/blogs/fullstack-blog-1.jpg");
+    }
 
 
 
@@ -1855,7 +2107,6 @@ margin-top: 16px;
 /* get-certified div............................
 .................................... */
 .get-certified-div{
-  /* border:1px solid black; */
   border-radius: 10px;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.107);
   padding:15px;
@@ -1867,32 +2118,11 @@ margin-top: 16px;
 .certified-student-image{
   width:100%;
   height:100%;
-  /* border:4px solid grey; */
-  /* border-radius: 50%; */
+
 }
 
 
-/* header.....................................
-......................................... */
-.header-left-side,
-.header-right-side{
-  padding: 8rem;
-}
 
-/* .header-right-side{
-  width:15rem;
-  height:4rem;
-} */
-.header-right-side{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-}
-.header-right-side img{
-  height:100%;
-  width:100%;
-  
-}
 
 
 /* placement cards.............. */
@@ -1902,10 +2132,69 @@ font-weight: 700;
 
 
 
+/* placement.......................
+...................................... */
+.placement-div{
 
-/* mobile view............... */
+ height:80%;
+  border-radius: 23px !important;
+}
+.project-title{
+  padding:4px 16px;
+
+  border-radius: 16px;
+  width:7vw;
+  
+}
+.project-title-1{
+  background-color: rgba(255, 192, 203, 0.423);
+  color:red;
+}
+
+.project-title-2{
+  background-color: rgba(135, 207, 235, 0.699);
+  color:blue;
+}
+
+.project-title-3{
+  background-color: rgba(128, 128, 128, 0.418);
+  color:black;
+}
+
+.project-title-4{
+  background-color: rgba(238, 130, 238, 0.515);
+  color:blueviolet;
+}
+
+.project-title-5{
+  background-color: rgba(144, 238, 144, 0.349);
+  color:green;
+}
+
+.project-title-6{
+  background-color:rgba(0, 255, 255, 0.534) ;
+  color:  darkcyan;
+}
+ 
+
+
+
+
+/* mobile view........................................
+.....................................................*/
+
 @media screen and (min-width:280px) and (max-width:500px){
 
+
+
+
+
+
+  /* header............................................
+  ............................... */
+  .header-left-side{
+padding:3rem 2rem;
+  }
 
 
   .whats-app-enroll-btn{
@@ -1981,9 +2270,7 @@ padding:24px 10px 30px 10px;
 /* .hero-session-parent{
   margin-top: 7rem;
 }*/
-.header-left-side{
-  padding:8rem 2rem;
-} 
+
 .header-right-side{
   padding:0rem 2rem;
   width:70%;
@@ -2097,6 +2384,14 @@ padding:0px 13px;
 font-size: 1.6rem !important;
 }
 
+
+
+/* iit visit */
+
+.iit-visti-left-div div h3{
+  padding:8px !important;
+  }
+
 /* footer-section */
 .info_section .info_links {
   width: 51%;
@@ -2129,12 +2424,7 @@ height:auto;
   .our-mission-parent{
 display:none;
   }
-  /* .scrolled .navbar-toggler span ,
-  .scrolled .custom_nav-container .navbar-toggler span::before,
-  .scrolled  .custom_nav-container .navbar-toggler span::after
-  {
-    background-color: white !important;
-  } */
+
 .navbar-toggler span {
   background-color: #000000 !important;
 }
@@ -2173,18 +2463,7 @@ display:none !important;
 .contact_link_box a{
   font-size: 17px;
 }
-/* h2{
-  font-size: 1.7rem !important;
-  font-size: 400;
-}
-h3{
-  font-size: 1.45rem;
-  font-size: 400;
-}
-h4{
-  font-size: 1.4rem;
-  font-size: 400;
-} */
+
 .blog-cards-parent{
   margin-top: 4rem;
 }
@@ -2224,13 +2503,28 @@ border-radius: 10px !important;
   flex-direction: column;
 }
 
-/* .blog-des h4{
-font-size: 18px;
+
+
+/* comparison-table..................................
+...................................................... */
+table{
+  display:none;
 }
-.blog-des p{
-  font-size: 15px;
-  line-height: normal;
-} */
+
+
+/* iit visit..................................................
+...................................................... */
+
+
+/* projects-title-button.............................................
+.................................. */
+.project-title{
+  width:100%;
+}
+
+
+
+
 
 
 /* blog-image...................... */
@@ -2240,7 +2534,9 @@ font-size: 18px;
 .blog-des{
 padding-left: 0px;
 }
-
+.blog-div-parent{
+  padding:1rem 1rem !important;
+}
 
 /* internship-description */
 .get-started-btn{
@@ -2249,6 +2545,14 @@ padding:10px 10px;
 }
 .internship-description h2 {
 font-size: 29px;
+}
+
+
+
+/*google -review.....................................
+.....................................*/
+.google-review-image{
+  display:none;
 }
 
 }
@@ -2298,3 +2602,4 @@ display:none !important;
   justify-content: center;
   align-items: center;
 }
+
